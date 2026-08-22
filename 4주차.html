@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>유학생 성경연구 및 한국어 훈련 교재 - 4주차 (대용량 완장본 + 디지털 캔버스)</title>
+<style>
+  @page { size: A4; margin: 20mm; }
+  body { font-family: '맑은 고딕', 'Malgun Gothic', sans-serif; line-height: 1.85; color: #2D3748; padding: 10px; }
+  
+  /* 문서 타이틀 및 헤더 */
+  .doc-title { text-align: center; border-bottom: 3px double #1A365D; padding-bottom: 15px; margin-bottom: 30px; }
+  .doc-title h1 { color: #1A365D; font-size: 24pt; margin: 0 0 10px 0; font-weight: bold; }
+  .doc-title h2 { color: #2B6CB0; font-size: 15pt; margin: 0; font-weight: normal; }
+  
+  /* Section Headings */
+  h1.section-heading { color: #FFFFFF; background: #1A365D; font-size: 14pt; padding: 10px 18px; margin-top: 45px; border-radius: 4px; page-break-before: always; }
+  h1.section-heading:first-of-type { page-break-before: avoid; }
+  h2.sub-heading { color: #2B6CB0; font-size: 12.5pt; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px; margin-top: 28px; }
+  h3.leaf-heading { color: #2D3748; font-size: 11pt; margin-top: 18px; font-weight: bold; }
+  
+  /* Callout & Quotes */
+  blockquote { background: #F7FAFC; border-left: 5px solid #2B6CB0; padding: 18px 22px; margin: 22px 0; border-radius: 0 6px 6px 0; line-height: 1.9; }
+  .scripture-box { background: #EBF8FF; border: 1px solid #BEE3F8; padding: 18px; margin: 18px 0; border-radius: 6px; }
+  .visual-guide { background: #FAF5FF; border: 2px dashed #805AD5; padding: 18px; margin: 22px 0; border-radius: 6px; }
+  .deep-box { background: #FFF5F5; border: 1px solid #FEB2B2; padding: 18px; margin: 18px 0; border-radius: 6px; }
+  
+  /* Digital Canvas Style */
+  .canvas-container { border: 2px dashed #805AD5; background: #FFFFFF; border-radius: 6px; padding: 15px; margin: 18px 0; text-align: center; }
+  canvas { border: 1px solid #CBD5E0; background-color: #FAFAFA; border-radius: 4px; cursor: crosshair; touch-action: none; }
+  .canvas-tools { margin-top: 12px; display: flex; justify-content: center; gap: 15px; align-items: center; flex-wrap: wrap; }
+  .btn-canvas { padding: 6px 14px; background-color: #2B6CB0; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 9.5pt; font-weight: bold; }
+  .btn-canvas:hover { background-color: #2C5282; }
+  .btn-clear { background-color: #E53E3E; }
+  .btn-clear:hover { background-color: #C53030; }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; margin: 22px 0; font-size: 10pt; }
+  th { background: #2B6CB0; color: #FFFFFF; font-weight: bold; padding: 11px; border: 1px solid #CBD5E0; text-align: center; }
+  td { padding: 10px 12px; border: 1px solid #CBD5E0; vertical-align: top; }
+  tr:nth-child(even) { background: #F7FAFC; }
+  
+  /* Forms & Exercises */
+  .writing-line { border-bottom: 1px solid #E2E8F0; height: 36px; margin-bottom: 10px; }
+  .vocab-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-left: 4px solid #319795; padding: 14px; margin-bottom: 14px; border-radius: 4px; }
+  .qt-daily-card { background: #FFFFFF; border: 1px solid #CBD5E0; padding: 16px; margin-bottom: 20px; border-radius: 6px; }
+</style>
+</head>
+<body>
+
+<!-- COVER / HEADER -->
+<div class="doc-title">
+  <h1>[유학생 종합 성경연구 & 한국어 훈련 교재]</h1>
+  <h2>4주차: 광야 캠퍼스에서의 영적 전신갑주와 지혜의 삶 (Spiritual Armor & Wisdom)</h2>
+  <p style="font-size: 10.5pt; color: #718096; margin-top: 10px;">학부생 맞춤형 | 심층 강해·SPACE QT·학술 한국어·대면-컴퓨터 실시간 워크북 에디션[cite: 3]</p>
+</div>
+
+<div class="scripture-box">
+  <h3 style="margin-top:0; color:#2B6CB0;">📖 핵심 성경 본문 및 요절</h3>
+  <p><strong>본문:</strong> 에베소서 6장 10-18절 / 야고보서 1장 2-8절</p>
+  <p><strong>핵심 요절 1:</strong> <em>"끝으로 너희가 주 안에서와 그 힘의 능력으로 강건하여지고 마귀의 간계를 능히 대적하기 위하여 하나님의 전신 갑주를 입으라" (에베소서 6:10-11)</em></p>
+  <p><strong>핵심 요절 2:</strong> <em>"너희 중에 누구든지 지혜가 부족하거든 모든 사람에게 후히 주시고 꾸짖지 아니하시는 하나님께 구하라 그리하면 주시리라" (야고보서 1:5)</em></p>
+</div>
+
+<!-- SECTION 1 -->
+<h1 class="section-heading">MODULE 1. 세션 개요 및 유학생을 위한 영적·학술적 프레임워크</h1>
+
+<h2 class="sub-heading">1.1 모듈의 배경 및 연구 목적</h2>
+<p>유학 생활 중반부로 접어들면 학생들은 과제 폭탄, 조별 과제에서의 갈등, 그리고 미래에 대한 막연한 두려움이라는 복합적 위기에 직면합니다. 이때 지성인으로서 감정적으로 무너지거나 세속적 방법으로 해결하려 하기 쉽습니다. 에베소서가 전하는 '하나님의 전신갑주'와 야고보서가 말하는 '하늘의 지혜'는 영적 전쟁 터와 같은 캠퍼스에서 그리스도인이 어떻게 보호받고 서야 하는지를 명확히 보여줍니다[cite: 3].</p>
+
+<p>본 4주차 모듈은 타국 대학 캠퍼스에서 날마다 마주하는 영적·정서적 도전을 진단하고, 방어와 공격을 위한 거룩한 무장인 전신갑주의 의미를 학문적·신학적 관점에서 재해석합니다[cite: 3]. 유학생들이 고립감과 무력감을 넘어 능동적인 영적 전사로 거듭나도록 설계되었습니다[cite: 3].</p>
+
+<h2 class="sub-heading">1.2 4주차 상세 세션 타임테이블 (120분 기준)</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width:12%;">단계</th>
+      <th style="width:12%;">소요 시간</th>
+      <th style="width:46%;">주요 활동 및 진행 세부 내용</th>
+      <th style="width:30%;">준비물 및 진행 가이드</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Opening</b></td>
+      <td>10분</td>
+      <td>환영, 지난주(3주차) '말씀 무기 카드' 과제 나눔 및 오늘의 찬양</td>
+      <td>출석부, 음향 장비, 찬양 가사지[cite: 3]</td>
+    </tr>
+    <tr>
+      <td><b>Ice Breaking</b></td>
+      <td>15분</td>
+      <td><b>'내 학업 생활을 가장 지치게 만드는 요인':</b> 최근 조별 과제나 시험 기간 중 겪은 영적·정서적 소진 경험 공유</td>
+      <td>화이트보드, 필기구[cite: 3]</td>
+    </tr>
+    <tr>
+      <td><b>Word & Study</b></td>
+      <td>35분</td>
+      <td>에베소서 6장 및 야고보서 1장 심층 강해, 헬라어 원어 분석 ('판오플리아'와 '소피아'), 전신갑주 구조 특강</td>
+      <td>교재 Module 5 참조, PPT 자료[cite: 3]</td>
+    </tr>
+    <tr>
+      <td><b>Discussion</b></td>
+      <td>35분</td>
+      <td>3단계 심층 토론 (Section A: 캠퍼스 영적전쟁 분석 / Section B: 전신갑주 적용 / Section C: 지혜 구하기)</td>
+      <td>소그룹 분반 조장 가이드북 (Module 6)[cite: 3]</td>
+    </tr>
+    <tr>
+      <td><b>Action Plan</b></td>
+      <td>15분</td>
+      <td>SPACE 프레임워크 작성 및 내장 캔버스 활용 '나의 전신갑주 체크리스트' 스케치</td>
+      <td>Module 3.2 캔버스 및 Module 7[cite: 3]</td>
+    </tr>
+    <tr>
+      <td><b>Closing</b></td>
+      <td>8분</td>
+      <td>합심 기도, 주간 SPACE QT 7일 워크북 트래커 안내 및 축도/마무리 기도</td>
+      <td>기도 제목 카드, 주간 트래커[cite: 3]</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="visual-guide">
+  <strong>🎨 [인포그래픽 워크북 가이드 01] 영적 전신갑주 구조도</strong>
+  <p>진리의 허리띠, 의의 호심경, 평안의 복음의 신발, 믿음의 방패, 구원의 투구, 성령의 검(하나님의 말씀)으로 무장하여 세속의 불화살을 막아내고 캠퍼스에서 승리하는 구조를 시각화합니다[cite: 3].</p>
+</div>
+
+<!-- SECTION 2 -->
+<h1 class="section-heading">MODULE 2. 유학생을 위한 대학 라이프 핵심 한국어 (Academic & Campus Korean)</h1>
+
+<h2 class="sub-heading">2.1 신앙·학술·캠퍼스 핵심 어휘 10선 및 세부 활용법</h2>
+
+<div class="vocab-card">
+  <strong>1. 전신갑주 (Full Armor / 全身甲冑) [명사]</strong><br>
+  - <i>사전적 의미:</i> 머리부터 발끝까지 몸 전체를 보호하기 위해 갖추어 입는 완전한 무장.<br>
+  - <i>학술적 활용:</i> "급변하는 학술 환경 속에서 연구 윤리를 지키기 위해서는 도덕적 전신갑주가 필요합니다."<br>
+  - <i>신앙적 활용:</i> "영적 전쟁이 치열한 캠퍼스에서 하나님의 전신갑주를 입어야 세속의 유혹을 이길 수 있습니다."
+</div>
+
+<div class="vocab-card">
+  <strong>2. 간계 (Wiles/Schemes / 奸計) [명사]</strong><br>
+  - <i>사전적 의미:</i> 남을 해치거나 속이기 위한 간교하고 음흉한 꾀.<br>
+  - <i>학술적 활용:</i> "방대한 데이터 분석 과정에서 오류를 유발하는 통계적 간계를 경계해야 합니다."<br>
+  - <i>신앙적 활용:</i> "마귀의 간계는 우리의 약한 정서적 틈을 타 불신과 분열을 조장하는 것입니다."
+</div>
+
+<div class="vocab-card">
+  <strong>3. 분별 (Discernment / 分別) [명사]</strong><br>
+  - <i>사전적 의미:</i> 사물의 옳고 그름이나 참과 거짓을 정확하게 가려냄.<br>
+  - <i>학술적 활용:</i> "수많은 문헌 자료 중에서 신뢰할 수 있는 출처를 분별하는 안목이 필수적입니다."<br>
+  - <i>신앙적 활용:</i> "어떤 결정이 하나님의 선하신 뜻에 합당한지 영적 분별력을 달라고 기도합시다."
+</div>
+
+<div class="vocab-card">
+  <strong>4. 인내 (Perseverance/Patience / 忍耐) [명사]</strong><br>
+  - <i>사전적 의미:</i> 괴로움이나 슬픔을 참고 견 아님.<br>
+  - <i>학술적 활용:</i> "학위 논문을 완성하기까지는 수많은 시행착오와 오랜 인내가 요구됩니다."<br>
+  - <i>신앙적 활용:</i> "시련은 인내를, 인내는 연단된 인격을 이루어 유학생의 믿음을 온전하게 합니다."
+</div>
+
+<div class="vocab-card">
+  <strong>5. 방패 (Shield / 防牌) [명사]</strong><br>
+  - <i>사전적 의미:</i> 적의 공격을 막아내는 방어용 무기.<br>
+  - <i>학술적 활용:</i> "엄격한 방법론과 객관적 증거는 비판적 공격으로부터 연구를 지키는 방패가 됩니다."<br>
+  - <i>신앙적 활용:</i> "믿음의 방패를 가지고 악한 자의 모든 불화살을 능히 소멸할 수 있습니다."
+</div>
+
+<div class="vocab-card">
+  <strong>6. 진리 (Truth / 眞理) [명사]</strong><br>
+  - <i>사전적 의미:</i> 변하지 않고 영원히 타당한 참된 도리나 법칙.<br>
+  - <i>학술적 활용:</i> "학문의 목적은 현상 이면에 숨겨진 객관적 진리를 탐구하고 규명하는 것입니다."<br>
+  - <i>신앙적 활용:</i> "진리의 허리띠를 띠고 거짓과 타협하지 않는 정직한 지성인이 됩시다."
+</div>
+
+<div class="vocab-card">
+  <strong>7. 간구 (Supplication/Petition / 懇求) [명사]</strong><br>
+  - <i>사전적 의미:</i> 절실하고 간절하게 도움을 구함.<br>
+  - <i>학술적 활용:</i> "연구의 막막한 벽에 부딪힐 때마다 지도교수에게 적극적으로 조력을 간구해야 합니다."<br>
+  - <i>신앙적 활용:</i> "모든 기도와 간구를 하되 항상 성령 안에서 기도하고 깨어 구하십시오."
+</div>
+
+<div class="vocab-card">
+  <strong>8. 소진 (Burnout / 燒盡) [명사]</strong><br>
+  - <i>사전적 의미:</i> 에너지가 완전히 고갈되어 신체적·정신적으로 탈진한 상태.<br>
+  - <i>학술적 활용:</i> "학기 말 과제 폭풍 속에서 대학원생들이 겪는 심리적 소진 현상은 심각합니다."<br>
+  - <i>신앙적 활용:</i> "영적으로 소진될 때마다 하나님의 말씀과 기도로 새 힘을 공급받아야 합니다."
+</div>
+
+<div class="vocab-card">
+  <strong>9. 대적 (Resisting/Opposition / 對敵) [명사]</strong><br>
+  - <i>사전적 의미:</i> 적이 되어 맞서 싸움.<br>
+  - <i>학술적 활용:</i> "학문적 편견과 고정관념에 정면으로 대적하여 새로운 패러다임을 제시합니다."<br>
+  - <i>신앙적 활용:</i> "마귀를 대적하라 그리하면 너희를 피하리라 하신 약속을 붙잡습니다."
+</div>
+
+<div class="vocab-card">
+  <strong>10. 온전함 (Completeness/Maturity / 溫全함) [명사]</strong><br>
+  - <i>사전적 의미:</i> 모자라거나 흠이 없이 완전함.<br>
+  - <i>학술적 활용:</i> "철저한 검토와 교정을 거쳐야 비로소 온전한 형태의 학술 보고서가 완성됩니다."<br>
+  - <i>신앙적 활용:</i> "인내를 온전히 이루어 조금도 부족함이 없는 성숙한 그리스도인이 됩시다."
+</div>
+
+<h2 class="sub-heading">2.2 학술적·대학 생활 고급 한국어 표현 및 고급 문법 실습</h2>
+<table>
+  <thead>
+    <tr>
+      <th>고급 표현 및 문법</th>
+      <th>문법 구조 및 핵심 의미</th>
+      <th>학부 라이프 적용 예문</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>~에 대처하다</b></td>
+      <td>어떤 상황이나 문제에 알맞은 조치를 취하다</td>
+      <td>"예상치 못한 실험 오류나 과제 변경에 유연하게 <b>대처하는</b> 능력이 중요합니다."</td>
+    </tr>
+    <tr>
+      <td><b>~을/를 면치 못하다</b></td>
+      <td>어려운 상황이나 비판을 피하지 못하고 겪게 되다</td>
+      <td>"충분한 사전 검토가 없다면 이번 프로젝트에서 혹독한 비판을 <b>면치 못할 것입니다</b>."</td>
+    </tr>
+    <tr>
+      <td><b>~에 구애받지 않다</b></td>
+      <td>일정한 기준이나 제한에 얽매이지 않고 자유롭다</td>
+      <td>"주변의 시선이나 평가에 <b>구애받지 않고</b> 소신 있게 학업에 임하겠습니다."</td>
+    </tr>
+    <tr>
+      <td><b>~을/를 도모하다</b></td>
+      <td>어떤 일을 이루기 위해 계획하고 애쓰다</td>
+      <td>"우리 소그룹은 함께 모여 학업적 성취와 영적 성장을 동시에 <b>도모하고 있습니다</b>."</td>
+    </tr>
+    <tr>
+      <td><b>~에 기인하다</b></td>
+      <td>어떤 일의 원인이 특정 현상이나 조건으로부터 비롯되다</td>
+      <td>"최근 학업 스트레스 증가는 과도한 완벽주의 성향에 <b>기인한 것입니다</b>."</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECTION 3 -->
+<h1 class="section-heading">MODULE 3. 심층 SPACE QT 가이드: 전신갑주와 지혜를 위한 5가지 관점</h1>
+
+<h2 class="sub-heading">3.1 학부 유학생을 위한 SPACE QT 프레임워크의 상세 구조</h2>
+<p>4주차 SPACE 묵상법은 에베소서의 전신갑주와 야고보서의 지혜를 바탕으로, 캠퍼스에서 영적으로 무장하고 실천하는 방법을 5가지 키워드로 분석합니다[cite: 3].</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:15%;">키워드</th>
+      <th style="width:25%;">원어 및 영문 정의</th>
+      <th style="width:60%;">유학생 학업 및 캠퍼스 라이프에의 구체적 적용 질문</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>S</b></td>
+      <td><b>Sins to confess</b><br>(고백해야 할 죄)</td>
+      <td>내 힘과 지식만 믿고 기도와 말씀을 소홀히 했거나, 불평과 원망으로 공동체를 흔들었던 죄는 무엇인가?</td>
+    </tr>
+    <tr>
+      <td><b>P</b></td>
+      <td><b>Promises to claim</b><br>(주장해야 할 약속)</td>
+      <td>구하는 자에게 후히 주시고 꾸짖지 않으시는 지혜의 약속과, 능히 대적하게 하시는 하나님의 전신갑주는 무엇인가?</td>
+    </tr>
+    <tr>
+      <td><b>A</b></td>
+      <td><b>Actions to avoid</b><br>(피해야 할 행동)</td>
+      <td>어려움이 닥쳤을 때 하나님을 신뢰하지 못하고 두려움에 떨거나 조급하게 편법을 택하려는 행동은 무엇인가?</td>
+    </tr>
+    <tr>
+      <td><b>C</b></td>
+      <td><b>Commands to obey</b><br>(순종해야 할 명령)</td>
+      <td>"하나님의 전신갑주를 입으라"는 명령과 "믿음으로 구하고 조금도 의심하지 말라"는 명령을 어떻게 실천할 것인가?</td>
+    </tr>
+    <tr>
+      <td><b>E</b></td>
+      <td><b>Examples to follow</b><br>(따라야 할 본보기)</td>
+      <td>시련 속에서도 흔들리지 않고 믿음의 기도를 드린 야고보와, 말씀의 검으로 영적 전쟁에서 승리하신 예수님의 본을 어떻게 닮을 것인가?</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="sub-heading">3.2 디지털 인터랙티브 스케치: 나만의 '영적 전신갑주 점검표' 만들기</h2>
+<div class="visual-guide">
+  <strong>🎨 [대면 참여자용 디지털 워킹 패드 가이드]</strong>
+  <p><strong>진행 방식:</strong> 아래 디지털 캔버스에 마우스나 터치패드로 <b>'내가 가장 보완해야 할 전신갑주(예: 믿음의 방패)'</b>와 <b>'이번 주 실천할 한 줄 다짐'</b>을 직접 그려보세요[cite: 3]. 그림을 마친 후 <u>[그림 저장하기]</u>를 눌러 이미지를 다운로드하거나, <u>옆 사람에게 화면을 공유</u>해 봅시다[cite: 3].</p>
+  
+  <div class="canvas-container">
+    <canvas id="armorCanvas" width="650" height="240"></canvas>
+    <div class="canvas-tools">
+      <label><b>선 색상:</b> <input type="color" id="penColor" value="#1A365D"></label>
+      <label><b>굵기:</b> <input type="range" id="penWidth" min="1" max="12" value="3"></label>
+      <button type="button" class="btn-canvas btn-clear" onclick="clearCanvas()">전체 지우기</button>
+      <button type="button" class="btn-canvas" onclick="downloadCanvas()">그림 저장하기 (PNG)</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const canvas = document.getElementById('armorCanvas');
+  const ctx = canvas.getContext('2d');
+  let isDrawing = false;
+
+  function initCanvas() {
+    ctx.fillStyle = "#FAFAFA";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.font = "14px '맑은 고딕'";
+    ctx.fillStyle = "#A0AEC0";
+    ctx.textAlign = "center";
+    ctx.fillText("[ 🛡️ 캔버스 위에서 마우스나 터치패드로 전신갑주 점검 내용을 그리거나 쓰세요 ]", canvas.width / 2, canvas.height / 2);
+  }
+  
+  initCanvas();
+
+  canvas.addEventListener('mousedown', startDrawing);
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mouseup', stopDrawing);
+  canvas.addEventListener('mouseout', stopDrawing);
+
+  canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const mouseEvent = new MouseEvent('mousedown', {
+      clientX: touch.clientX,
+      clientY: touch.clientY
+    });
+    canvas.dispatchEvent(mouseEvent);
+  });
+  canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const mouseEvent = new MouseEvent('mousemove', {
+      clientX: touch.clientX,
+      clientY: touch.clientY
+    });
+    canvas.dispatchEvent(mouseEvent);
+  });
+  canvas.addEventListener('touchend', (e) => {
+    const mouseEvent = new MouseEvent('mouseup', {});
+    canvas.dispatchEvent(mouseEvent);
+  });
+
+  function startDrawing(e) {
+    if (!isDrawing) {
+      if (ctx.fillStyle === "#a0aec0") {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#FAFAFA";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+    isDrawing = true;
+    const rect = canvas.getBoundingClientRect();
+    ctx.beginPath();
+    ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
+  }
+
+  function draw(e) {
+    if (!isDrawing) return;
+    const rect = canvas.getBoundingClientRect();
+    ctx.strokeStyle = document.getElementById('penColor').value;
+    ctx.lineWidth = document.getElementById('penWidth').value;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+    ctx.stroke();
+  }
+
+  function stopDrawing() { isDrawing = false; }
+  
+  function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    initCanvas();
+    isDrawing = false;
+  }
+
+  function downloadCanvas() {
+    const link = document.createElement('a');
+    link.download = 'My_Spiritual_Armor_Card.png';
+    link.href = canvas.toDataURL();
+    link.click();
+  }
+</script>
+
+<h2 class="sub-heading">3.3 SPACE QT 작성 세부 6단계 프로세스</h2>
+<ol>
+  <li><strong>STEP 1: 마음 정돈 및 성령의 조율 기도 (5분)</strong> — "학업의 무게로 지친 내 영혼을 새롭게 하시고, 오늘 주시는 전신갑주로 무장시켜 주소서."[cite: 3]</li>
+  <li><strong>STEP 2: 본문 정독 및 요절 필사 (10분)</strong> — 에베소서 6:10-18과 야고보서 1:2-8을 깊이 읽고 핵심 요절을 손으로 써 내려갑니다[cite: 3].</li>
+  <li><strong>STEP 3: SPACE 5가지 요소 정밀 도출 (10분)</strong> — 본문에서 S, P, A, C, E에 해당하는 항목을 최소 1가지씩 발견하여 기록합니다[cite: 3].</li>
+  <li><strong>STEP 4: 신학적·영적 의미의 상호 연관성 묵상 (10분)</strong> — 전신갑주의 방어와 공격 무기가 내 유학 라이프의 불안감을 어떻게 해소하는지 상묵합니다[cite: 3].</li>
+  <li><strong>STEP 5: 3P (Personal, Practical, Possible) 적용문 작성 (10분)</strong> — 나 개인의 마음가짐(Personal), 이번 주 학업 적용(Practical), 오늘 당장 실행 가능한 작은 일(Possible)을 적습니다[cite: 3].</li>
+  <li><strong>STEP 6: 결단과 위탁의 마무리 기도 (5분)</strong> — 캠퍼스 영적 전쟁에서 승리할 것을 선포하는 기도[cite: 3].</li>
+</ol>
+
+<!-- SECTION 4 -->
+<h1 class="section-heading">MODULE 4. 사전 연구 과제 및 과제 제출 워크시트 (Pre-Study Assignment)</h1>
+
+<h2 class="sub-heading">4.1 신학 텍스트 비교 및 서술형 사전 과제</h2>
+<p><strong>[과제 1] 에베소서의 전신갑주와 야고보서의 지혜 구하기 연계 분석</strong></p>
+<p style="font-size: 9.5pt; color: #4A5568;">에베소서 6장의 전신갑주 목록을 읽고, 야고보서 1장에서 말하는 시험과 지혜의 관계를 비교하여 아래 질문에 서술형으로 답하세요[cite: 3].</p>
+
+<p>1) 바울이 에베소서에서 육체적 무기가 아닌 영적 '전신갑주'를 입으라고 강조한 근본적인 이유는 무엇입니까?</p>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+
+<p>2) 야고보서 1장 2-8절에서 시험을 당할 때 온전히 기쁘게 여기라 하신 이유와, 지혜를 구할 때 취해야 할 태도는 무엇입니까?</p>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+
+<p>3) 대학 생활 중 나로 하여금 믿음의 방패를 흔들리게 만드는 가장 큰 '불화살(두려움, 의심, 비교)'은 무엇입니까?</p>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+
+<h2 class="sub-heading">4.2 고급 학술 한국어 단어 활용 응용 작성 과제</h2>
+<p>Module 2에 제시된 10개의 어휘 중 4개를 선택하여, 자신의 유학 생활과 학업적 결단을 담은 완성형 단락(4-5문장)을 작성하세요[cite: 3].</p>
+<p>선택한 단어: ( &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</p>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+
+<!-- SECTION 5 -->
+<h1 class="section-heading">MODULE 5. 본문 주석 및 심층 신학 강해 (Exegetical Exposition)</h1>
+
+<h2 class="sub-heading">5.1 역사적·신학적 배경: 로마 군사 문화와 영적 전신갑주</h2>
+<p>에베소서가 기록될 당시 바울은 로마 감옥에 투옥되어 있었으며, 로마 군인들의 철저한 무장 상태를 매일 눈앞에서 목격했습니다. 바울은 이 로마 군인의 갑옷을 비유로 사용하여, 성도가 세상의 영적 세력에 맞서기 위해 어떤 영적 무장을 해야 하는지 설명합니다. 영적 전쟁은 인간의 혈과 육을 상대하는 것이 아니라 어둠의 세상 주관자들과 악한 영들을 상대하는 것이므로, 인간의 지혜나 스펙이 아닌 하나님의 갑주만이 유일한 대책입니다[cite: 3].</p>
+
+<p>한편 야고보서 1장은 시험(Peirasmos)을 단순히 피해야 할 고통이 아니라, 성도의 믿음을 단련하고 온전한 인격을 이루게 하는 거룩한 과정으로 선포합니다[cite: 3]. 이 과정에서 흔들리지 않기 위해 우리는 하나님께 구체적인 '지혜'를 간구해야 합니다[cite: 3].</p>
+
+<ul>
+  <li><strong>진리의 허리띠 & 의의 호심경:</strong> 정직과 거룩함으로 인격과 삶의 중심을 단단히 고정하는 방어.</li>
+  <li><strong>평안의 복음의 신발:</strong> 어떤 환경에서도 흔들리지 않는 복음의 확신과 평안으로 발걸음을 지킴.</li>
+  <li><strong>믿음의 방패 & 구원의 투구:</strong> 사탄의 모든 불화살(의심, 절망)을 막아내고 구원의 확신으로 생각을 보호함.</li>
+  <li><strong>성령의 검 (하나님의 말씀):</strong> 유일한 공격 무기이자 진리의 검으로 대적을 물리침.</li>
+</ul>
+
+<h2 class="sub-heading">5.2 심층 구절별 해석 (Exegetical Notes)</h2>
+<div class="deep-box">
+  <p><strong>• 에베소서 6:11 "마귀의 간계를 능히 대적하기 위하여 하나님의 전신 갑주를 입으라"</strong><br>
+  여기서 '입으라(Endysasthe)'는 명령어는 일회성 행동이 아니라 매일 아침 옷을 입듯 지속적으로 취해야 하는 영적 태도를 의미합니다[cite: 3]. 유학생들이 매일 아침 학업을 시작하기 전 하나님의 전신갑주를 마음에 입는 기도가 필요한 이유입니다[cite: 3].</p>
+
+  <p><strong>• 에베소서 6:16 "모든 것 위에 믿음의 방패를 가지고 이로써 능히 악한 자의 모든 불화살을 소멸하고"</strong><br>
+  당시 로마 군병들의 방패는 가죽으로 감싸여 있어 적의 불화살이 날아올 때 물에 적셔 불을 껐습니다. 믿음의 방패는 우리의 연약함을 아시는 주님을 향한 신뢰로, 유학 생활 중 날아오는 수많은 정서적 불화살을 꺼뜨립니다[cite: 3].</p>
+
+  <p><strong>• 야고보서 1:5 "너희 중에 누구든지 지혜가 부족하거든... 후히 주시고 꾸짖지 아니하시는 하나님께 구하라"</strong><br>
+  인간의 지혜나 계산으로 해결할 수 없는 학업적·인생의 막다른 길에서, 하나님은 책망하지 않으시고 넉넉하게 지혜를 부어주시는 분임을 확증합니다[cite: 3].</p>
+</div>
+
+<h2 class="sub-heading">5.3 원어 심층 연구 (헬라어 & 히브리어)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>원어 (성경)</th>
+      <th>발음 / 본문</th>
+      <th>사전적 본질 의미</th>
+      <th>대학 라이프 및 지성인 영성으로의 확장 해석</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>πανοπλία</b><br>(Greek)</td>
+      <td>판오플리아<br>(엡 6:11)</td>
+      <td>전신갑주, 머리부터 발끝까지 완전하게 갖춘 군사적 무장</td>
+      <td>지성인이 캠퍼스에서 지식뿐만 아니라 영적·도덕적 온전함을 갖추는 총체적 무장.</td>
+    </tr>
+    <tr>
+      <td><b>μεθοδεία</b><br>(Greek)</td>
+      <td>메토데이아<br>(엡 6:11)</td>
+      <td>간계, 계략, 교묘하게 속이려는 치밀한 술수</td>
+      <td>유학생들의 마음을 분열시키고 학업을 포기하게 만드는 세속적 유혹과 구조적 압박.</td>
+    </tr>
+    <tr>
+      <td><b>σοφία</b><br>(Greek)</td>
+      <td>소피아<br>(약 1:5)</td>
+      <td>지혜, 사물의 본질을 꿰뚫어 바르게 판단하는 영적 통찰력</td>
+      <td>단순한 암기나 성적 지식을 넘어, 하나님 경외함을 바탕으로 삶을 이끌어가는 참된 지성.</td>
+    </tr>
+    <tr>
+      <td><b>دیج</b><br>(Hebrew)</td>
+      <td>호셤 (Hoshia)<br>(구약적 구원)</td>
+      <td>구원하다, 건져내다, 곤경에서 해방시키다</td>
+      <td>학업과 타국 생활의 극한 곤경 속에서 건져주시는 하나님의 구원의 은혜[cite: 3].</td>
+    </tr>
+    <tr>
+      <td><b>ὑπομένω</b><br>(Greek)</td>
+      <td>후포메노<br>(약 1:12)</td>
+      <td>인내하다, 굳건히 버텨내다, 아래에 머물러 견디다</td>
+      <td>시련 속에서 도망치지 않고 믿음의 자리를 묵묵히 지켜내어 열매를 맺는 태도.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECTION 6 -->
+<h1 class="section-heading">MODULE 6. 지성인을 위한 3단계 심층 소그룹 토론 (Discussion)</h1>
+
+<h2 class="sub-heading">Section A: 캠퍼스 영적 전쟁 분석 (Observation)</h2>
+<p>1. 이번 학기 유학 생활을 하면서 내 마음의 평안을 가장 심하게 흔들었던 '불화살(시기, 두려움, 번 아웃)'은 구체적으로 무엇이었습니까?</p>
+<p>2. 내 힘과 지식만으로 이 위기를 돌파하려다 실패했던 경험이 있다면 서로 나누어 봅시다.</p>
+
+<h2 class="sub-heading">Section B: 전신갑주 적용 (Reflection)</h2>
+<p>1. 에베소서가 말하는 전신갑주(진리, 의, 평안, 믿음, 구원, 말씀) 중 현재 내게 가장 시급하게 보완이 필요한 무기는 무엇입니까?</p>
+<p>2. "하나님의 전신갑주를 입으라"는 명령이 매일 반복되는 캠퍼스 일상에서 어떤 실제적인 변화를 가져다줄 수 있을까요?</p>
+
+<h2 class="sub-heading">Section C: 지혜 구하기와 연합 (Integration)</h2>
+<p>1. 야고보서의 말씀처럼 지혜가 부족할 때, 사람의 방법이나 세상의 편법을 찾는 대신 하나님께 구하는 삶을 방해하는 요인은 무엇입니까?</p>
+<p>2. 이번 주간 공동체 지체들과 함께 서로를 위해 중보하며 영적 전신갑주를 단단히 여미기 위한 실천 방안을 이야기해 봅시다.</p>
+
+<div class="deep-box">
+  <strong>💡 소그룹 조장(Leader)을 위한 꼬리 질문 가이드라인</strong>
+  <ul>
+    <li><b>질문 확장:</b> 조원이 "불안해서 잠이 안 온다"고 할 때 ➔ "구원의 투구와 믿음의 방패를 의지하여 그 두려움을 어떻게 대면할 수 있을까요?"라고 격려해 주세요[cite: 3].</li>
+    <li><b>공감과 중보:</b> 유학생들이 각자의 자리에서 겪는 영적 고립감을 나누고, 서로의 방패가 되어주는 기도로 모임을 마무리하도록 이끌어주세요[cite: 3].</li>
+  </ul>
+</div>
+
+<!-- SECTION 7 -->
+<h1 class="section-heading">MODULE 7. 영적 전신갑주 맵핑 및 승리 액션 플랜 (Action Plan)</h1>
+
+<p>전신갑주의 6가지 영역에 비추어 나의 유학 라이프를 정밀 진단하고 승리 전략을 수립하세요[cite: 3].</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>전신갑주 부위</th>
+      <th>성경적 의미</th>
+      <th>유학생의 캠퍼스 적용 (Application)</th>
+      <th>이번 주 구체적 실천 (Action)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>1. 진리의 허리띠</b></td>
+      <td>하나님의 말씀과 진실성</td>
+      <td>거짓과 과장된 포장을 버리고 정직하게 과제와 연구에 임하기</td>
+      <td>모든 학업 과정에서 표절이나 편법을 멀리하고 정직 선언하기</td>
+    </tr>
+    <tr>
+      <td><b>2. 의의 호심경</b></td>
+      <td>그리스도의 의와 거룩한 삶</td>
+      <td>정죄감 대신 십자가의 은혜로 마음을 보호하고 도덕성 지키기</td>
+      <td>타인을 비판하거나 시기하는 마음이 들 때 즉시 회개하기</td>
+    </tr>
+    <tr>
+      <td><b>3. 평안의 복음의 신발</b></td>
+      <td>복음이 주는 견고한 평안</td>
+      <td>환경에 좌우되지 않는 평안으로 불안한 유학 길을 든든히 걷기</td>
+      <td>아침에 일어나 하루를 평안의 기도로 시작하기</td>
+    </tr>
+    <tr>
+      <td><b>4. 믿음의 방패</b></td>
+      <td>하나님을 향한 절대 신뢰</td>
+      <td>세상의 불화살(실패의 두려움, 비교 의식)을 믿음으로 막아내기</td>
+      <td>불안감이 올 때마다 시편 구절을 암송하며 방패 삼기</td>
+    </tr>
+    <tr>
+      <td><b>5. 구원의 투구</b></td>
+      <td>구원의 확신과 올바른 생각</td>
+      <td>부정적이고 열등한 생각 사로잡아 그리스도께 복종시키기</td>
+      <td>내 가치를 성적이 아닌 구원의 은혜 위에 두기</td>
+    </tr>
+    <tr>
+      <td><b>6. 성령의 검</b></td>
+      <td>하나님의 말씀 (레마)</td>
+      <td>유혹과 낙심의 순간에 말씀으로 즉각 대적하고 승리하기</td>
+      <td>매일 암송 구절 1개씩 입술로 선포하기</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECTION 8 -->
+<h1 class="section-heading">MODULE 8. 주간 SPACE QT 실천 챌린지 및 7일 워크북 (Weekly Tracker)</h1>
+
+<h2 class="sub-heading">8.1 7일간의 매일 SPACE QT 진행 요약표</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width:8%;">요일</th>
+      <th style="width:14%;">성경 본문</th>
+      <th style="width:25%;">SPACE 추출 분석</th>
+      <th style="width:43%;">오늘의 묵상 및 실천 적용 (3P)</th>
+      <th style="width:10%;">점검</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>월</b></td>
+      <td>엡 6:10-13</td>
+      <td><b>C:</b> 전신갑주 입으라<br><b>E:</b> 영적 전쟁 인식</td>
+      <td>한 주의 시작을 내 힘이 아닌 하나님의 전신갑주를 입는 기도로 시작하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>화</b></td>
+      <td>엡 6:14-15</td>
+      <td><b>P:</b> 진리와 평안<br><b>A:</b> 거짓 타협 금지</td>
+      <td>조별 과제에서 정직하고 신실한 태도로 동기들에게 신뢰를 보이기로 결단하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>수</b></td>
+      <td>엡 6:16-18</td>
+      <td><b>C:</b> 믿음의 방패 사용<br><b>P:</b> 성령 안에서 기도</td>
+      <td>학업 스트레스와 불안이 엄습할 때 믿음의 방패로 막아내고 무시로 기도하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>목</b></td>
+      <td>약 1:2-4</td>
+      <td><b>P:</b> 시련과 인내<br><b>E:</b> 온전한 인격</td>
+      <td>까다로운 과제나 논문 피드백을 불평하지 않고 나를 단련하는 기회로 삼기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>금</b></td>
+      <td>약 1:5-8</td>
+      <td><b>C:</b> 지혜를 구하라<br><b>A:</b> 의심하지 말라</td>
+      <td>연구나 학업 중 막히는 부분이 있을 때 사람보다 하나님께 지혜를 간구하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>토</b></td>
+      <td>약 1:12</td>
+      <td><b>P:</b> 생명의 면류관<br><b>E:</b> 시험을 참는 자</td>
+      <td>주말에도 방황하지 않고 다음 주 학업과 공동체 모임을 성실히 준비하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>일</b></td>
+      <td>시 27:1-3</td>
+      <td><b>P:</b> 여호와는 나의 빛<br><b>C:</b> 두려워하지 말라</td>
+      <td>주일 예배를 통해 영적 에너지를 재충전하고 한 주를 담대히 맞이하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="sub-heading">8.2 매일 묵상 본문 전문 및 워크북 가이드 (Day 1 ~ Day 7)</h2>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 1] 월요일: 영적 전쟁을 직시하고 갑주 입기 (에베소서 6:10-13)</h3>
+  <p><strong>[본문 요약]</strong> 주 안에서 강건하여지고 마귀의 간계를 능히 대적하기 위하여 하나님의 전신갑주를 입으라 하십니다. 우리의 씨름은 혈과 육이 아니요 영적 권세들을 상대로 함입니다.</p>
+  <p><strong>• S (고백할 죄):</strong> 눈에 보이는 현상에만 매여 영적 전쟁을 망각하고 내 힘으로만 버티려 했던 교만</p>
+  <p><strong>• C (순종할 명령):</strong> 악한 날에 능히 대적하고 모든 일을 행한 후에 서기 위해 하나님의 전신갑주를 입으라.</p>
+  <p><strong>• 3P 적용:</strong> 오늘 강의실로 향하기 전, 하나님의 전신갑주를 머리부터 발끝까지 입는 기도를 드리겠다[cite: 3].</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 2] 화요일: 진리의 허리띠와 평안의 신발 (에베소서 6:14-15)</h3>
+  <p><strong>[본문 요약]</strong> 진리로 너희 허리띠를 띠고 의의 호심경을 붙이고 평안의 복음이 준비한 것으로 신을 신고 방패와 투구를 갖추라 명하십니다.</p>
+  <p><strong>• P (약속의 말씀):</strong> 복음의 평안이 우리의 발걸음을 든든하게 지켜주신다.</p>
+  <p><strong>• A (피할 행동):</strong> 거짓이나 편법으로 위기를 모면하려는 타협적 태도</p>
+  <p><strong>• 3P 적용:</strong> 동기들과 과제를 할 때 정직하고 투명하게 소통하며 진리의 허리띠를 굳게 매겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 3] 수요일: 믿음의 방패와 성령의 검 (에베소서 6:16-18)</h3>
+  <p><strong>[본문 요약]</strong> 모든 것 위에 믿음의 방패를 가지고 악한 자의 불화살을 소멸하며 구원의 투구와 성령의 검 곧 하나님의 말씀을 가지라 합니다. 무시로 성령 안에서 기도하라 명하십니다.</p>
+  <p><strong>• C (순종할 명령):</strong> 성령 안에서 기도하고 모든 기도와 간구를 항상 구하라.</p>
+  <p><strong>• E (따라야 할 본보기):</strong> 위기의 순간마다 말씀의 검으로 유혹을 물리치신 주님의 모본</p>
+  <p><strong>• 3P 적용:</strong> 불안감이 찾아올 때마다 낙심하지 않고 성령 안에서 무시로 짧은 기도를 드리겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 4] 목요일: 시련 속에서 인내를 온전히 이루기 (야고보서 1:2-4)</h3>
+  <p><strong>[본문 요약]</strong> 내 형제들아 너희가 여러 가지 시험을 만나거든 온전히 기쁘게 여기라. 이는 믿음의 시련이 인내를 만들어 내는 줄 너희가 앎이라. 인내를 온전히 이루라.</p>
+  <p><strong>• P (약속의 말씀):</strong> 시련은 우리를 온전하고 구비하여 조금도 부족함이 없게 하려는 거룩한 연단이다.</p>
+  <p><strong>• 3P 적용:</strong> 힘든 과제나 논문 수정 요구를 받을 때 불평 대신 성장을 위한 과정으로 여기겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 5] 금요일: 꾸짖지 않으시고 후히 주시는 지혜 (야고보서 1:5-8)</h3>
+  <p><strong>[본문 요약]</strong> 너희 중에 누구든지 지혜가 부족하거든 모든 사람에게 후히 주시고 꾸짖지 아니하시는 하나님께 구하라 그리하면 주시리라. 오직 믿음으로 구하고 조금도 의심하지 말라.</p>
+  <p><strong>• S (고백할 죄):</strong> 하나님을 신뢰하지 못하고 내 지식과 의심으로 갈등했던 모습</p>
+  <p><strong>• C (순종할 명령):</strong> 의심하지 말고 오직 믿음으로 하나님께 지혜를 간구하라.</p>
+  <p><strong>• 3P 적용:</strong> 연구 방향이나 진로 문제로 고민할 때 먼저 무릎 꿇고 하나님의 지혜를 구하겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 6] 토요일: 시험을 참는 자의 생명의 면류관 (야고보서 1:12)</h3>
+  <p><strong>[본문 요약]</strong> 시험을 참는 자는 복이 있나니 이는 시련을 견뎌 낸 자가 주께서 자기를 사랑하는 자들에게 약속하신 생명의 면류관을 얻을 것이기 때문이라.</p>
+  <p><strong>• P (약속의 말씀):</strong> 인내하며 견뎌내는 자에게 주님은 생명의 면류관을 약속하셨다.</p>
+  <p><strong>• 3P 적용:</strong> 주말 시간 동안 나태해지지 않고 다음 주 학업 스케줄을 기쁨으로 점검하겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 7] 일요일: 두려움을 이기게 하시는 하나님 (시편 27:1-3)</h3>
+  <p><strong>[본문 요약]</strong> 여호와는 나의 빛이요 나의 구원이시니 내가 누구를 두려워하리요 여호와는 나의 생명의 능력이시니 내가 누구를 무서워하리요 군대가 나를 대적하여 진 칠지라도 내 마음이 두렵지 아니하며...</p>
+  <p><strong>• P (약속의 말씀):</strong> 하나님이 나의 빛과 구원이시므로 캠퍼스의 어떤 환경도 두렵지 않다.</p>
+  <p><strong>• 3P 적용:</strong> 주일 예배를 통해 주님의 임재를 깊이 경험하고 한 주간 승리를 선포하겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<!-- SECTION 9 -->
+<h1 class="section-heading">MODULE 9. 합심 기도문 및 성찰 에세이 가이드</h1>
+
+<h2 class="sub-heading">9.1 주간 공동체 합심 기도문</h2>
+<blockquote>
+  <p><em>"영적 전쟁 터와 같은 캠퍼스 한복판에서 저희를 지키시는 만군의 하나님 아버지, 타국 유학 생활의 무거운 짐과 끊임없이 밀려오는 학업적 압박 속에서 연약해진 저희의 영혼을 불쌍히 여겨 주소서. 진리의 허리띠를 띠고 의의 호심경을 붙이며, 믿음의 방패와 성령의 검을 주사 날마다 하나님의 전신갑주로 온전히 무장하게 하소서[cite: 3]."</em></p>
+  <p><em>"하나님 아버지, 지혜가 부족할 때 꾸짖지 않으시고 후히 부어주시는 주님의 약속을 의지합니다[cite: 3]. 세상의 두려움과 의심의 불화살이 날아올 때 믿음의 방패로 능히 소멸하게 하시며[cite: 3], 시련 속에서도 온전한 인내를 이루어 마침내 승리하는 지성인들 되게 하소서[cite: 3]. 예수님의 이름으로 기도합니다. 아멘[cite: 3]."</em></p>
+</blockquote>
+
+<h2 class="sub-heading">9.2 주간 심층 성찰 에세이: "캠퍼스 영적 전쟁과 나의 전신갑주 무장"</h2>
+<p style="font-size: 10pt; color: #4A5568;">
+<strong>[에세이 작성 가이드 및 세부 제출 양식]</strong><br>
+아래 3가지 질문을 바탕으로 자신의 생각과 영적 고백을 정리하여 A4 1~2장 분량으로 작성해 소그룹 리더에게 제출하세요[cite: 3].<br>
+1. <strong>현상 진단:</strong> 이번 학기 유학 생활 중 사탄의 간계나 세속적 불화살(두려움, 의심, 번 아웃)로 인해 가장 크게 흔들렸던 순간은 언제였습니까?<br>
+2. <strong>본문 재해석:</strong> 에베소서의 전신갑주 중 현재 나에게 가장 절실하게 필요한 갑주는 무엇이며, 야고보서의 지혜를 어떻게 내 학업에 적용할 수 있습니까?<br>
+3. <strong>실천적 결단:</strong> 앞으로의 대학 라이프에서 영적으로 무장하고 승리하기 위한 나만의 '전신갑주 착용 및 지혜 간구 수칙 3가지'를 작성하세요.
+</p>
+
+<!-- SECTION 10 -->
+<h1 class="section-heading">MODULE 10. 기독교 학문관과 전공 연결 (Faith & Learning Integration)</h1>
+
+<h2 class="sub-heading">10.1 영적 전신갑주와 전공 학문의 연결 구조</h2>
+<p>영적으로 무장된 지성인은 자신이 연구하는 전공 학문을 세속적 출세의 수단이 아니라, 하나님의 진리를 드러내고 이웃을 섬기는 거룩한 도구로 사용하게 됩니다[cite: 3].</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:20%;">전공 계열</th>
+      <th style="width:35%;">성과주의적 세속적 관점 (불안의 관점)</th>
+      <th style="width:45%;">전신갑주가 무장된 기독교적 학문관 (지혜의 관점)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>경영 / 경제학</b></td>
+      <td>경쟁에서 살아남기 위해 윤리를 타협하는 이윤 추구 학문</td>
+      <td>진리와 정직의 허리띠를 띠고 공정 경제와 청지기 정신을 구현하는 학문</td>
+    </tr>
+    <tr>
+      <td><b>공학 / IT 기술</b></td>
+      <td>스펙과 기술 경쟁에서 우위를 점하기 위한 수단</td>
+      <td>믿음의 방패로 기술적 오만을 막고, 연약한 인간을 돕는 생명 존중 학문</td>
+    </tr>
+    <tr>
+      <td><b>인문 / 사회과학</b></td>
+      <td>비판을 위한 논리 구성과 개인의 명예를 높이는 도구</td>
+      <td>구원의 투구로 생각을 보호하며, 깨어진 사회 관계를 치유하고 화해시키는 학문</td>
+    </tr>
+    <tr>
+      <td><b>예술 / 디자인</b></td>
+      <td>세상의 인정과 상업적 성공을 좇는 심미적 과시</td>
+      <td>창조주의 아름다움을 세상에 투영하여 지친 영혼에 위로를 전하는 창조적 학문</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

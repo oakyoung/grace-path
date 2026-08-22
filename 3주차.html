@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>유학생 성경연구 및 한국어 훈련 교재 - 3주차 (대용량 완장본 + 디지털 캔버스)</title>
+<style>
+  @page { size: A4; margin: 20mm; }
+  body { font-family: '맑은 고딕', 'Malgun Gothic', sans-serif; line-height: 1.85; color: #2D3748; padding: 10px; }
+  
+  /* 문서 타이틀 및 헤더 */
+  .doc-title { text-align: center; border-bottom: 3px double #1A365D; padding-bottom: 15px; margin-bottom: 30px; }
+  .doc-title h1 { color: #1A365D; font-size: 24pt; margin: 0 0 10px 0; font-weight: bold; }
+  .doc-title h2 { color: #2B6CB0; font-size: 15pt; margin: 0; font-weight: normal; }
+  
+  /* Section Headings */
+  h1.section-heading { color: #FFFFFF; background: #1A365D; font-size: 14pt; padding: 10px 18px; margin-top: 45px; border-radius: 4px; page-break-before: always; }
+  h1.section-heading:first-of-type { page-break-before: avoid; }
+  h2.sub-heading { color: #2B6CB0; font-size: 12.5pt; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px; margin-top: 28px; }
+  h3.leaf-heading { color: #2D3748; font-size: 11pt; margin-top: 18px; font-weight: bold; }
+  
+  /* Callout & Quotes */
+  blockquote { background: #F7FAFC; border-left: 5px solid #2B6CB0; padding: 18px 22px; margin: 22px 0; border-radius: 0 6px 6px 0; line-height: 1.9; }
+  .scripture-box { background: #EBF8FF; border: 1px solid #BEE3F8; padding: 18px; margin: 18px 0; border-radius: 6px; }
+  .visual-guide { background: #FAF5FF; border: 2px dashed #805AD5; padding: 18px; margin: 22px 0; border-radius: 6px; }
+  .deep-box { background: #FFF5F5; border: 1px solid #FEB2B2; padding: 18px; margin: 18px 0; border-radius: 6px; }
+  
+  /* Digital Canvas Style */
+  .canvas-container { border: 2px dashed #805AD5; background: #FFFFFF; border-radius: 6px; padding: 15px; margin: 18px 0; text-align: center; }
+  canvas { border: 1px solid #CBD5E0; background-color: #FAFAFA; border-radius: 4px; cursor: crosshair; touch-action: none; }
+  .canvas-tools { margin-top: 12px; display: flex; justify-content: center; gap: 15px; align-items: center; flex-wrap: wrap; }
+  .btn-canvas { padding: 6px 14px; background-color: #2B6CB0; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 9.5pt; font-weight: bold; }
+  .btn-canvas:hover { background-color: #2C5282; }
+  .btn-clear { background-color: #E53E3E; }
+  .btn-clear:hover { background-color: #C53030; }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; margin: 22px 0; font-size: 10pt; }
+  th { background: #2B6CB0; color: #FFFFFF; font-weight: bold; padding: 11px; border: 1px solid #CBD5E0; text-align: center; }
+  td { padding: 10px 12px; border: 1px solid #CBD5E0; vertical-align: top; }
+  tr:nth-child(even) { background: #F7FAFC; }
+  
+  /* Forms & Exercises */
+  .writing-line { border-bottom: 1px solid #E2E8F0; height: 36px; margin-bottom: 10px; }
+  .vocab-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-left: 4px solid #319795; padding: 14px; margin-bottom: 14px; border-radius: 4px; }
+  .qt-daily-card { background: #FFFFFF; border: 1px solid #CBD5E0; padding: 16px; margin-bottom: 20px; border-radius: 6px; }
+</style>
+</head>
+<body>
+
+<!-- COVER / HEADER -->
+<div class="doc-title">
+  <h1>[유학생 종합 성경연구 & 한국어 훈련 교재]</h1>
+  <h2>3주차: 광야에서의 정체성과 자아 확립 (Identity in the Wilderness)</h2>
+  <p style="font-size: 10.5pt; color: #718096; margin-top: 10px;">학부생 맞춤형 | 심층 강해·SPACE QT·학술 한국어·대면-컴퓨터 실시간 워크북 에디션</p>
+</div>
+
+<div class="scripture-box">
+  <h3 style="margin-top:0; color:#2B6CB0;">📖 핵심 성경 본문 및 요절</h3>
+  <p><strong>본문:</strong> 마태복음 4장 1-11절 / 신명기 8장 1-10절</p>
+  <p><strong>핵심 요절 1:</strong> <em>"예수께서 대답하여 이르시되 기록되었으되 사람이 떡으로만 살 것이 아니요 하나님의 입으로부터 나오는 모든 말씀으로 살 것이라 하였느니라 하시니" (마태복음 4:4)</em></p>
+  <p><strong>핵심 요절 2:</strong> <em>"너를 낮추시며 너를 줄리게 하시며 또 너도 알지 못하며 네 조상들도 알지 못하던 만나를 네게 먹이신 것은 사람이 떡으로만 사는 것이 아니요 여호와의 입에서 나오는 모든 말씀으로 사는 줄을 네가 알게 하려 하심이니라" (신명기 8:3)</em></p>
+</div>
+
+<!-- SECTION 1 -->
+<h1 class="section-heading">MODULE 1. 세션 개요 및 유학생을 위한 영적·학술적 프레임워크</h1>
+
+<h2 class="sub-heading">1.1 모듈의 배경 및 연구 목적</h2>
+<p>유학 생활이 본격화되는 학기 초중반에 이르면 학부 유학생들은 단순한 언어적 불편함을 넘어 **'존재론적 불안(Existential Anxiety)'**에 직면합니다. 타국이라는 익숙지 않은 환경, 과중한 팀 프로젝트와 강의 리포트, 그리고 끊임없이 이어지는 상대평가의 구조 속에서 유학생들은 "나는 과연 이곳에서 경쟁력이 있는가?"라는 근본적인 질문을 던지게 됩니다.</p>
+
+<p>세상의 가치 체계와 대학 내 성과주의(Meritocracy)는 유학생들에게 "네가 돌을 떡으로 만들어낼 때만, 즉 눈에 보이는 성과와 학점을 증명할 때만 유용한 존재"라고 끊임없이 압박합니다. 예수님께서 공생애를 시작하시기 전 성령에 끌리어 광야에서 받으신 세 가지 시험(생존과 소유의 시험, 영적 영웅주의와 인정 욕구의 시험, 세속적 권력과의 타협)은 유학생들이 캠퍼스 현장에서 날마다 경험하는 영적·심리적 전쟁과 그 구조가 정확히 일치합니다.</p>
+
+<p>본 3주차 모듈은 광야를 단순한 '결핍과 고통의 장소'로 보지 않고, 세상의 소음이 차단된 채 **'하나님 자녀로서의 본질적 정체성(Identity)을 단단히 세우는 거룩한 연단장'**으로 재해석하도록 돕습니다. 학부 유학생들이 세속적 인정 욕구에서 벗어나 하나님의 말씀으로 스스로를 증명하는 지성인으로 바로 서도록 설계되었습니다.</p>
+
+<h2 class="sub-heading">1.2 3주차 상세 세션 타임테이블 (120분 기준)</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width:12%;">단계</th>
+      <th style="width:12%;">소요 시간</th>
+      <th style="width:46%;">주요 활동 및 진행 세부 내용</th>
+      <th style="width:30%;">준비물 및 진행 가이드</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Opening</b></td>
+      <td>10분</td>
+      <td>환영, 지난주(2주차) 소통 다리 놓기 과제 이행 점검 및 오늘의 찬양</td>
+      <td>출석부, 음향 장비, 찬양 가사지</td>
+    </tr>
+    <tr>
+      <td><b>Ice Breaking</b></td>
+      <td>15분</td>
+      <td><b>'나를 조급하게 만드는 세상의 소리':</b> 타인과의 비교나 학업 성과 때문에 마음이 크게 흔들렸던 최근의 경험 나눔</td>
+      <td>화이트보드, 필기구, 마음 카드</td>
+    </tr>
+    <tr>
+      <td><b>Word & Study</b></td>
+      <td>35분</td>
+      <td>마태복음 4장 및 신명기 8장 심층 본문 강해, 헬라어/히브리어 원어 분석, '광야(Erēmos) 신학' 특강</td>
+      <td>교재 Module 5 참조, PPT 자료</td>
+    </tr>
+    <tr>
+      <td><b>Discussion</b></td>
+      <td>35분</td>
+      <td>3단계 심층 토론 (Section A: 캠퍼스 성과주의 분석 / Section B: 영적 정체성 성찰 / Section C: 학업-신앙 통합)</td>
+      <td>소그룹 분반 조장 가이드북 (Module 6)</td>
+    </tr>
+    <tr>
+      <td><b>Action Plan</b></td>
+      <td>15분</td>
+      <td>SPACE 프레임워크 작성 및 내장 캔버스 활용 '말씀 무기 카드' 실시간 스케치</td>
+      <td>Module 3.2 캔버스 및 Module 7</td>
+    </tr>
+    <tr>
+      <td><b>Closing</b></td>
+      <td>8분</td>
+      <td>합심 기도, 주간 SPACE QT 7일 워크북 트래커 안내 및 축도/마무리 기도</td>
+      <td>기도 제목 카드, 주간 트래커</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="visual-guide">
+  <strong>🎨 [인포그래픽 워크북 가이드 01] 세속적 성과주의 vs 하나님 자녀의 정체성</strong>
+  <p>사탄의 시험 체계(Do & Have ➔ Become: "네 능력으로 떡을 만들어 자격이 있음을 증명하라")와 하나님의 은혜 체계(Become ➔ Live: "너는 이미 사랑받는 내 아들이니, 그 정체성으로 담대히 살라")의 대조 구조를 마음에 새깁니다.</p>
+</div>
+
+<!-- SECTION 2 -->
+<h1 class="section-heading">MODULE 2. 유학생을 위한 대학 라이프 핵심 한국어 (Academic & Campus Korean)</h1>
+
+<h2 class="sub-heading">2.1 신앙·학술·캠퍼스 핵심 어휘 10선 및 세부 활용법</h2>
+
+<div class="vocab-card">
+  <strong>1. 본질 (Essence / 本質) [명사]</strong><br>
+  - <i>사전적 의미:</i> 어떤 사물이나 존재가 그 자체가 되게 하는 가장 바탕이 되는 성질.<br>
+  - <i>학술적 활용:</i> "학업에서의 성과나 표면적 점수보다 더 중요한 것은 지성인으로서 탐구하는 본질적 태도입니다."<br>
+  - <i>신앙적 활용:</i> "나의 본질은 학점에 의해 결정되는 것이 아니라 하나님의 구속받은 자녀라는 사실에 있습니다."
+</div>
+
+<div class="vocab-card">
+  <strong>2. 성과주의 (Meritocracy/Performance-orientation / 成果主義) [명사]</strong><br>
+  - <i>사전적 의미:</i> 오직 눈에 보이는 실적이나 결과만을 바탕으로 사람의 가치를 평가하려는 태도.<br>
+  - <i>학술적 활용:</i> "과도한 성과주의는 대학 구성원 간의 건전한 협력 관계를 저해하는 요인이 될 수 있습니다."<br>
+  - <i>신앙적 활용:</i> "캠퍼스의 치열한 성과주의 속에서 그리스도인은 행함이 아닌 은혜의 원리로 중심을 잡아야 합니다."
+</div>
+
+<div class="vocab-card">
+  <strong>3. 결핍 (Deprivation/Scarcity / 缺乏) [명사]</strong><br>
+  - <i>사전적 의미:</i> 있어야 할 것이 없거나 모자람.<br>
+  - <i>학술적 활용:</i> "연구 과정에서의 데이터 결핍은 새로운 가설을 설정하는 출발점이 되기도 합니다."<br>
+  - <i>신앙적 활용:</i> "광야의 결핍은 내 힘을 의지하지 않고 오직 하나님의 공급하심을 경험하는 거룩한 통로입니다."
+</div>
+
+<div class="vocab-card">
+  <strong>4. 검증 (Verification / 檢證) [명사]</strong><br>
+  - <i>사전적 의미:</i> 어떤 사실이나 명제의 진위 및 타당성을 증명하여 확인함.<br>
+  - <i>학술적 활용:</i> "수집된 설문 조사 결과를 바탕으로 본 연구의 가설을 엄격하게 검증하고자 합니다."<br>
+  - <i>신앙적 활용:</i> "세상은 끊임없이 우리의 능력을 증명하라고 요구하지만, 하나님은 이미 우리를 인정하셨습니다."
+</div>
+
+<div class="vocab-card">
+  <strong>5. 자족 (Self-reliance/Contentment / 自足) [명사]</strong><br>
+  - <i>사전적 의미:</i> 스스로 모든 필요를 채우며 더 이상 바랄 것이 없이 만족함.<br>
+  - <i>학술적 활용:</i> "현재의 학술적 성과에만 자족하지 않고 보다 깊이 있는 주제로 연구를 확장해야 합니다."<br>
+  - <i>신앙적 활용:</i> "어떠한 형편에서든지 하나님 한 분만으로 만족하는 자족의 비결을 배우는 것이 광야 영성입니다."
+</div>
+
+<div class="vocab-card">
+  <strong>6. 왜곡 (Distortion / 歪曲) [명사]</strong><br>
+  - <i>사전적 의미:</i> 사실이나 진리를 있는 그대로 보지 않고 사실과 다르게 틀어버림.<br>
+  - <i>학술적 활용:</i> "편향된 시각으로 자료를 해석하면 연구 결과 전체가 왜곡될 위험이 있습니다."<br>
+  - <i>신앙적 활용:</i> "사탄은 하나님의 사랑과 말씀의 진리를 왜곡하여 우리 마음에 조급함과 두려움을 심습니다."
+</div>
+
+<div class="vocab-card">
+  <strong>7. 분별력 (Discernment / 分別力) [명사]</strong><br>
+  - <i>사전적 의미:</i> 사물의 옳고 그름, 혹은 가치와 비가치를 가려내는 지혜로운 능력.<br>
+  - <i>학술적 활용:</i> "인터넷에 넘쳐나는 정보 속에서 학술적 가치가 있는 데이터를 가려내는 분별력이 필수적입니다."<br>
+  - <i>신앙적 활용:</i> "세속적 문화와 하나님의 거룩한 뜻을 명확히 가려내는 영적 분별력이 유학생에게 필요합니다."
+</div>
+
+<div class="vocab-card">
+  <strong>8. 영웅주의 (Heroism / 英雄主義) [명사]</strong><br>
+  - <i>사전적 의미:</i> 대중의 관심과 인정, 과시를 위해 자신을 특별한 존재로 다듬어 드러내려는 성향.<br>
+  - <i>학술적 활용:</i> "학문적 공동체에서는 개인의 영웅주의보다 팀원 간의 협력적 연구가 더욱 귀중합니다."<br>
+  - <i>신앙적 활용:</i> "뛰어내려 사람들에게 인기와 인정을 얻으라는 영웅주의의 시험을 말씀으로 이겨내야 합니다."
+</div>
+
+<div class="vocab-card">
+  <strong>9. 연단 (Refinement/Training / 鍊鍛) [명사]</strong><br>
+  - <i>사전적 의미:</i> 쇠를 불에 달구어 두드려 단단하게 만들듯, 시련을 통해 인격과 신앙을 견고하게 함.<br>
+  - <i>학술적 활용:</i> "논문 수정 과정의 피드백은 연구자의 사고를 한층 더 정교하게 다듬어주는 연단의 시간입니다."<br>
+  - <i>신앙적 활용:</i> "유학 기간 겪는 언어와 문화의 한계는 우리를 순금 같은 하나님 일꾼으로 만드시는 연단입니다."
+</div>
+
+<div class="vocab-card">
+  <strong>10. 주체성 (Autonomy/Agency / 主體性) [명사]</strong><br>
+  - <i>사전적 의미:</i> 남에게 이끌리지 않고 자기 의지와 신념에 따라 행동하는 성질.<br>
+  - <i>학술적 활용:</i> "대학 교육은 학생 스스로 탐구하고 결론을 도출하는 학문적 주체성을 길러주어야 합니다."<br>
+  - <i>신앙적 활용:</i> "세상의 비판이나 평가에 흔들리지 않고 그리스도인으로서 거룩한 정체성의 주체성을 지킵시다."
+</div>
+
+<h2 class="sub-heading">2.2 학술적·대학 생활 고급 한국어 표현 및 고급 문법 실습</h2>
+<table>
+  <thead>
+    <tr>
+      <th>고급 표현 및 문법</th>
+      <th>문법 구조 및 핵심 의미</th>
+      <th>학부 라이프 적용 예문</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>~에 매몰되다</b></td>
+      <td>어떤 시각이나 환경에 깊이 빠져 전체를 보지 못하다</td>
+      <td>"당장의 학점 수치에만 <b>매몰되면</b> 지성인으로서 깊이 있게 배울 수 있는 기회를 놓치게 됩니다."</td>
+    </tr>
+    <tr>
+      <td><b>~을/를 넘어서서</b></td>
+      <td>기존의 한계나 세속적 기준을 넘어 더 높은 차원으로 가다</td>
+      <td>"타인과의 소모적인 비교를 <b>넘어서서</b>, 하나님이 내게 주신 고유한 달란트에 집중하고자 합니다."</td>
+    </tr>
+    <tr>
+      <td><b>~에 일희일비하지 않다</b></td>
+      <td>작은 성과나 실패에 마음이 들떴다 가라앉지 않다</td>
+      <td>"퀴즈 점수나 발표 결과에 <b>일희일비하지 않고</b>, 매일 성실히 노력하는 태도를 지키겠습니다."</td>
+    </tr>
+    <tr>
+      <td><b>~을/를 규명하다</b></td>
+      <td>어떤 진리, 현상, 원인을 논리적으로 밝혀내다</td>
+      <td>"이번 팀 프로젝트에서는 한국 대학생들의 소통 양상을 신학적·사회학적 관점에서 <b>규명하겠습니다</b>."</td>
+    </tr>
+    <tr>
+      <td><b>~에 수렴하다</b></td>
+      <td>여러 의견이나 가치가 하나의 핵심 결론으로 모이다</td>
+      <td>"우리의 다양한 전공 지식과 학문적 열정은 결국 하나님을 영화롭게 하는 비전으로 <b>수렴됩니다</b>."</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECTION 3 -->
+<h1 class="section-heading">MODULE 3. 심층 SPACE QT 가이드: 정체성 확립을 위한 5가지 관점</h1>
+
+<h2 class="sub-heading">3.1 학부 유학생을 위한 SPACE QT 프레임워크의 상세 구조</h2>
+<p>SPACE 묵상법은 성경 본문 속에서 단순히 감상적인 느낌을 적는 데 그치지 않고, <strong>'지성적이면서도 실천적인 영적 관점'</strong>을 제공하는 구조화된 묵상 방법론입니다. 3주차에는 광야의 시험과 정체성 회복을 아래의 5가지 키워드로 분석합니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:15%;">키워드</th>
+      <th style="width:25%;">원어 및 영문 정의</th>
+      <th style="width:60%;">유학생 학업 및 캠퍼스 라이프에의 구체적 적용 질문</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>S</b></td>
+      <td><b>Sins to confess</b><br>(고백해야 할 죄)</td>
+      <td>눈앞의 학점과 성공을 위해 하나님보다 세속적 방법을 의지하거나, 타인과 나를 비교하며 시기하고 불평했던 죄는 무엇인가?</td>
+    </tr>
+    <tr>
+      <td><b>P</b></td>
+      <td><b>Promises to claim</b><br>(주장해야 할 약속)</td>
+      <td>내가 성과를 내기 전부터 이미 하나님의 사랑받는 자녀라는 사실과, 광야에서도 만나로 채우신다는 약속은 무엇인가?</td>
+    </tr>
+    <tr>
+      <td><b>A</b></td>
+      <td><b>Actions to avoid</b><br>(피해야 할 행동)</td>
+      <td>조급함에 휩싸여 신앙적 가치관과 타협하려 하거나, 남들에게 과시하기 위해 자신을 포장하려는 행동은 무엇인가?</td>
+    </tr>
+    <tr>
+      <td><b>C</b></td>
+      <td><b>Commands to obey</b><br>(순종해야 할 명령)</td>
+      <td>"사람이 떡으로만 살 것이 아니요 하나님의 말씀으로 살라"는 명령을 나의 매일 공부 스케줄 속에서 어떻게 지킬 것인가?</td>
+    </tr>
+    <tr>
+      <td><b>E</b></td>
+      <td><b>Examples to follow</b><br>(따라야 할 본보기)</td>
+      <td>사탄의 간교한 유혹 앞에서도 당황하지 않고 기록된 말씀의 검으로 유혹을 단칼에 물리치신 예수님의 본을 어떻게 닮을 것인가?</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="sub-heading">3.2 디지털 인터랙티브 스케치: 나만의 '말씀 무기(Word Sword)' 카드 만들기</h2>
+<div class="visual-guide">
+  <strong>🎨 [대면 참여자용 디지털 워킹 패드 가이드]</strong>
+  <p><strong>진행 방식:</strong> 아래 디지털 캔버스에 마우스나 터치패드로 <b>'나를 괴롭히는 유혹 메시지'</b>와 <b>'맞서 선포할 성경 구절'</b>을 직접 그려보세요. 그림을 마친 후 <u>[그림 저장하기]</u>를 눌러 이미지를 다운로드하거나, <u>옆 사람에게 노트북 화면을 돌려 공유</u>해 봅시다.</p>
+  
+  <div class="canvas-container">
+    <canvas id="wordSwordCanvas" width="650" height="240"></canvas>
+    <div class="canvas-tools">
+      <label><b>선 색상:</b> <input type="color" id="penColor" value="#1A365D"></label>
+      <label><b>굵기:</b> <input type="range" id="penWidth" min="1" max="12" value="3"></label>
+      <button type="button" class="btn-canvas btn-clear" onclick="clearCanvas()">전체 지우기</button>
+      <button type="button" class="btn-canvas" onclick="downloadCanvas()">그림 저장하기 (PNG)</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const canvas = document.getElementById('wordSwordCanvas');
+  const ctx = canvas.getContext('2d');
+  let isDrawing = false;
+
+  // 배경 및 기본 안내 텍스트 그리기
+  function initCanvas() {
+    ctx.fillStyle = "#FAFAFA";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.font = "14px '맑은 고딕'";
+    ctx.fillStyle = "#A0AEC0";
+    ctx.textAlign = "center";
+    ctx.fillText("[ ⚔️ 캔버스 위에서 마우스나 터치패드로 그림을 그리거나 글씨를 쓰세요 ]", canvas.width / 2, canvas.height / 2);
+  }
+  
+  initCanvas();
+
+  canvas.addEventListener('mousedown', startDrawing);
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mouseup', stopDrawing);
+  canvas.addEventListener('mouseout', stopDrawing);
+
+  // 모바일/터치 디바이스 지원
+  canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const mouseEvent = new MouseEvent('mousedown', {
+      clientX: touch.clientX,
+      clientY: touch.clientY
+    });
+    canvas.dispatchEvent(mouseEvent);
+  });
+  canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const mouseEvent = new MouseEvent('mousemove', {
+      clientX: touch.clientX,
+      clientY: touch.clientY
+    });
+    canvas.dispatchEvent(mouseEvent);
+  });
+  canvas.addEventListener('touchend', (e) => {
+    const mouseEvent = new MouseEvent('mouseup', {});
+    canvas.dispatchEvent(mouseEvent);
+  });
+
+  function startDrawing(e) {
+    if (!isDrawing) {
+      // 첫 터치/클릭 시 안내 문구 지우기
+      if (ctx.fillStyle === "#a0aec0") {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#FAFAFA";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+    isDrawing = true;
+    const rect = canvas.getBoundingClientRect();
+    ctx.beginPath();
+    ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
+  }
+
+  function draw(e) {
+    if (!isDrawing) return;
+    const rect = canvas.getBoundingClientRect();
+    ctx.strokeStyle = document.getElementById('penColor').value;
+    ctx.lineWidth = document.getElementById('penWidth').value;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+    ctx.stroke();
+  }
+
+  function stopDrawing() { isDrawing = false; }
+  
+  function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    initCanvas();
+    isDrawing = false;
+  }
+
+  function downloadCanvas() {
+    const link = document.createElement('a');
+    link.download = 'My_Word_Sword_Card.png';
+    link.href = canvas.toDataURL();
+    link.click();
+  }
+</script>
+
+<h2 class="sub-heading">3.3 SPACE QT 작성 세부 6단계 프로세스</h2>
+<ol>
+  <li><strong>STEP 1: 마음 정돈 및 성령의 조율 기도 (5분)</strong> — "세상의 평가로 흐려진 내 마음을 깨끗이 하시고, 오늘 주시는 말씀으로 하나님의 자녀라는 확신을 새겨 주소서."</li>
+  <li><strong>STEP 2: 본문 정독 및 요절 필사 (10분)</strong> — 마태복음 4:1-11과 신명기 8:1-10을 한 구절씩 깊이 읽고 핵심 요절을 손으로 정성껏 써 내려갑니다.</li>
+  <li><strong>STEP 3: SPACE 5가지 요소 정밀 도출 (10분)</strong> — 본문에서 S, P, A, C, E에 해당하는 항목을 최소 1가지씩 발견하여 기록합니다.</li>
+  <li><strong>STEP 4: 신학적·영적 의미의 상호 연관성 묵상 (10분)</strong> — 광야의 결핍과 예수님의 승리가 내 유학 라이프의 불안감을 어떻게 해소하는지 상묵합니다.</li>
+  <li><strong>STEP 5: 3P (Personal, Practical, Possible) 적용문 작성 (10분)</strong> — 나 개인의 마음가짐(Personal), 이번 주 학업 적용(Practical), 오늘 당장 실행 가능한 작은 일(Possible)을 적습니다.</li>
+  <li><strong>STEP 6: 결단과 위탁의 마무리 기도 (5분)</strong> — 내 자존감과 미래를 주님 손에 위탁하는 기도.</li>
+</ol>
+
+<!-- SECTION 4 -->
+<h1 class="section-heading">MODULE 4. 사전 연구 과제 및 과제 제출 워크시트 (Pre-Study Assignment)</h1>
+
+<h2 class="sub-heading">4.1 신학 텍스트 비교 및 서술형 사전 과제</h2>
+<p><strong>[과제 1] 마태복음 4장과 신명기 8장의 연관성 및 시험의 본질 분석</strong></p>
+<p style="font-size: 9.5pt; color: #4A5568;">사탄이 예수님께 건넨 세 가지 시험의 내용을 읽고, 신명기 8장에서 전하는 광야 훈련의 목적과 비교하여 아래 질문에 서술형으로 답하세요.</p>
+
+<p>1) 사탄이 "네가 만일 하나님의 아들이어든"이라는 조건을 붙인 진짜 의도는 무엇이라고 생각합니까?</p>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+
+<p>2) 신명기 8장 2-3절에서 하나님께서 이스라엘을 광야로 인도하셔서 낮추시고 줄리게 하신 거룩한 목적은 무엇입니까?</p>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+
+<p>3) 대학 생활 중 나로 하여금 신앙적 가치보다 눈앞의 '떡(학점, 인지도, 성공)'을 더 크게 바라보게 만드는 유혹은 무엇입니까?</p>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+
+<h2 class="sub-heading">4.2 고급 학술 한국어 단어 활용 응용 작성 과제</h2>
+<p>Module 2에 제시된 10개의 어휘 중 4개를 선택하여, 자신의 유학 생활과 학업적 결단을 담은 완성형 단락(4-5문장)을 작성하세요.</p>
+<p>선택한 단어: ( &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</p>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+<div class="writing-line"></div>
+
+<!-- SECTION 5 -->
+<h1 class="section-heading">MODULE 5. 본문 주석 및 심층 신학 강해 (Exegetical Exposition)</h1>
+
+<h2 class="sub-heading">5.1 역사적·신학적 배경: 광야(에레모스)의 구조와 예수님의 시험</h2>
+<p>성경 전체의 구속사에서 **'광야(Erēmos / Midbar)'**는 결코 무가치한 방황의 장소가 아닙니다. 광야는 애굽의 세속적 가치관을 벗어버리고 오직 하나님의 말씀에 따라 사는 거룩한 백성으로 재탄생하는 **'신앙의 용광로'**입니다. 구약의 이스라엘 백성은 40년의 광야 생활 동안 끊임없이 먹을 것과 마실 것을 요구하며 불평했고, 결국 하나님의 자녀라는 영적 신분을 잊은 채 무너졌습니다.</p>
+
+<p>그러나 '참 이스라엘'이자 하나님의 궁극적 아들이신 예수 그리스도께서는 세례를 받으신 직후, 성령의 권능에 끌리어 40일간 굶주리신 상태로 광야로 들어가셨습니다. 마태복음 4장에 등장하는 세 가지 시험은 단순한 개인적 시련이 아니었습니다. 그것은 구속사 전체를 걸고 사탄이 던진 치명적인 공격이었습니다.</p>
+
+<ul>
+  <li><strong>제1시험 (돌을 떡으로):</strong> 생존과 소유의 시험입니다. 하나님의 자녀라는 영적 신분을 '물질적 유용성'과 '능력의 증명'으로 바꾸라는 유혹입니다.</li>
+  <li><strong>제2시험 (성전 꼭대기에서 뛰어내리라):</strong> 영적 영웅주의와 인정 욕구의 시험입니다. 하나님을 인격적으로 신뢰하는 대신, 표적과 이적을 통해 대중의 인정을 구하라는 시험입니다.</li>
+  <li><strong>제3시험 (천하 만국을 줄 테니 절하라):</strong> 세속적 권력과 편법의 시험입니다. 십자가의 고난과 순종의 길을 거치지 않고, 세상과 타협하여 빠른 성공을 얻으라는 지름길의 유혹입니다.</li>
+</ul>
+
+<h2 class="sub-heading">5.2 심층 구절별 해석 (Exegetical Notes)</h2>
+<div class="deep-box">
+  <p><strong>• 마태복음 4:1 "그 때에 예수께서 성령에게 이끌리어 마귀에게 시험을 받으러 광야로 가사"</strong><br>
+  예수님께서 마귀에게 시험을 받으신 자리는 불순종의 결과가 아니었습니다. 그것은 성령의 주권적인 인도하심 아래 이루어진 거룩한 과정이었습니다. 유학생들이 경험하는 광야 같은 시련 역시 하나님의 방임이 아니라, 성령의 철저한 인도 아래 진행되는 연단의 시간입니다.</p>
+
+  <p><strong>• 마태복음 4:3 "시험하는 자가 예수께 나와서 이르되 네가 만일 하나님의 아들이어든..."</strong><br>
+  마귀의 전략은 '의심'을 심는 것입니다. 바로 앞장인 마태복음 3장 17절에서 하나님은 "이는 내 사랑하는 아들이요 내 기뻐하는 자라"고 선포하셨습니다. 마귀는 이 하나님의 선포를 의심하게 만들고, 네가 정말 아들이라면 능력을 보여서 그것을 증명하라고 부추깁니다. 유학생이 "네가 진짜 유학생이라면 성적으로 증명하라"는 세상의 소리에 휘둘리지 않아야 하는 이유가 여기에 있습니다.</p>
+
+  <p><strong>• 마태복음 4:4 "사람이 떡으로만 살 것이 아니요 하나님의 입으로부터 나오는 모든 말씀으로 살 것이라"</strong><br>
+  예수님은 신명기 8장 3절을 인용하십니다. 떡(Bread/Food)이 육체적 생명을 유지하는 도구일 수는 있지만, 인간의 본질적 존재와 영원한 생명은 오직 하나님의 입에서 나오는 '말씀(Rhema/Logos)'에 달려 있음을 선언하신 것입니다.</p>
+</div>
+
+<h2 class="sub-heading">5.3 원어 심층 연구 (헬라어 & 히브리어)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>원어 (성경)</th>
+      <th>발음 / 본문</th>
+      <th>사전적 본질 의미</th>
+      <th>대학 라이프 및 지성인 영성으로의 확장 해석</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>πειράζω</b><br>(Greek)</td>
+      <td>페이라조<br>(마 4:1)</td>
+      <td>시험하다, 유혹하다, 무너뜨리기 위해 파괴적 검증을 시도하다</td>
+      <td>나를 파괴하려는 세속의 유혹(Temptation)을, 하나님이 나를 단련하시는 신앙의 계기(Testing)로 반전시키는 시각.</td>
+    </tr>
+    <tr>
+      <td><b>ἔρημος</b><br>(Greek)</td>
+      <td>에레모스<br>(마 4:1)</td>
+      <td>광야, 황무지, 인간의 도우움이 전혀 없는 적막한 장소</td>
+      <td>외로움과 타국 생활의 한계. 세속의 잡음이 차단되고 하나님의 음성에만 온전히 집중하게 되는 거룩한 고독의 공간.</td>
+    </tr>
+    <tr>
+      <td><b>עָנָה</b><br>(Hebrew)</td>
+      <td>아나<br>(신 8:2)</td>
+      <td>낮추시다, 겸손하게 만들다, 자만을 꺾다</td>
+      <td>내 지식과 능력을 자랑하던 자만을 버리고, 오직 창조주 하나님의 도우심만을 겸손히 구하게 하시는 은혜의 연단.</td>
+    </tr>
+    <tr>
+      <td><b>λατρεύω</b><br>(Greek)</td>
+      <td>라트레우오<br>(마 4:10)</td>
+      <td>섬기다, 예배하다, 전 인격으로 종사하다</td>
+      <td>학점, 돈, 성공, 스펙이 아닌 오직 하나님만을 삶과 전공 탐구의 최고 가치로 두고 섬기는 삶의 자세.</td>
+    </tr>
+    <tr>
+      <td><b>געזג</b><br>(Hebrew)</td>
+      <td>나사<br>(신 8:2)</td>
+      <td>시험하다, 마음에 무엇이 있는지 알아보기 위해 올려놓다</td>
+      <td>광야 같은 시련을 통해 내 마음 중심에 진짜 성적이 있는지, 하나님이 계신지를 스스로 확인하게 하심.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECTION 6 -->
+<h1 class="section-heading">MODULE 6. 지성인을 위한 3단계 심층 소그룹 토론 (Discussion)</h1>
+
+<h2 class="sub-heading">Section A: 대학 현장의 성과주의 분석 (Observation)</h2>
+<p>1. 한국 대학 라이프에서 외국인 유학생으로서 좋은 학점이나 성과를 내지 못했을 때, 주변이나 스스로로부터 '가치 없는 사람'으로 평가받는 듯한 기분을 느낀 적이 있습니까?</p>
+<p>2. 사탄이 예수님에게 "돌로 떡을 만들어 보라"고 촉구했던 것처럼, 오늘날 한국 대학 사회가 유학생들에게 요구하는 가장 대표적인 '능력 증명'은 무엇입니까?</p>
+
+<h2 class="sub-heading">Section B: 영적 정체성 성찰 (Reflection)</h2>
+<p>1. 예수님은 돌을 떡으로 만드실 능력이 충분히 있으셨음에도 불구하고, 사탄의 촉구에 응하여 기적을 행하지 않으셨습니다. 세상의 방식으로 자신을 '증명'하지 않으신 이유는 무엇일까요?</p>
+<p>2. "사람이 떡으로만 살 것이 아니요 하나님의 입에서 나오는 모든 말씀으로 산다"는 선언이, 매일 시험과 과제 압박 속에서 살아가는 나에게 어떤 정서적 평안과 영적 자유를 줍니까?</p>
+
+<h2 class="sub-heading">Section C: 학업과 신앙의 통합 (Integration)</h2>
+<p>1. 내 삶의 우선순위에서 학업 성과나 스펙(떡)이 하나님과의 깊은 친밀함(말씀)보다 앞설 때, 내 일상과 정서에 어떤 이상 신호가 나타납니까?</p>
+<p>2. 이번 학기 타인과의 소모적인 비교나 조급함을 내려놓고, 하나님의 사랑받는 자녀로서 당당하고 성실하게 공부하기 위한 나만의 concrete 실천법은 무엇입니까?</p>
+
+<div class="deep-box">
+  <strong>💡 소그룹 조장(Leader)을 위한 꼬리 질문 가이드라인</strong>
+  <ul>
+    <li><b>질문 확장:</b> 조원이 "학점 때문에 너무 불안해요"라고 답하면 ➔ "그 불안감이 하나님이 나를 바라보시는 시선보다 교수의 평가를 더 크게 의지하게 만들기 때문은 아닐까요?"라고 확장해 주세요.</li>
+    <li><b>경청과 공감:</b> 유학생들이 겪는 타국에서의 정서적 고립감을 성경적 진리로 보듬어주되, 당장의 결과를 내야 한다는 조급함을 내려놓도록 조용한 기도로 도와주세요.</li>
+  </ul>
+</div>
+
+<!-- SECTION 7 -->
+<h1 class="section-heading">MODULE 7. 유학생 정체성 맵핑 및 광야 승리 액션 플랜 (Action Plan)</h1>
+
+<p>세 가지 시험 영역에 비추어 나의 유학 라이프를 정밀 진단하고 말씀에 기반한 승리 전략을 작성하세요.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>시험의 영역</th>
+      <th>유학생이 겪는 유혹 (Temptation)</th>
+      <th>예수님의 승리 원리</th>
+      <th>이번 주 구체적 실천 (Action)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>1. 생존과 소유<br>(돌 ➔ 떡)</b></td>
+      <td>성적, 장학금, 미래에 대한 두려움 때문에 신앙적 삶을 뒤로 미룸</td>
+      <td>사람은 말씀으로 산다<br>(신 8:3)</td>
+      <td>매일 공부를 시작하기 전 3분간 학업을 하나님께 위탁하는 기도를 드린 후 서적 펴기</td>
+    </tr>
+    <tr>
+      <td><b>2. 영적 영웅주의<br>(뛰어내리라)</b></td>
+      <td>교수나 동기들에게 인정받기 위해 무리하거나 자신을 포장함</td>
+      <td>주 너의 하나님을 시험하지 말라<br>(신 6:16)</td>
+      <td>남들에게 잘 보이기 위해 사용하는 SNS 시간을 줄이고, 무명의 겸손한 봉사 1가지 실천하기</td>
+    </tr>
+    <tr>
+      <td><b>3. 세속적 권력<br>(절하고 얻으라)</b></td>
+      <td>좋은 결과를 얻기 위해 정직하지 못한 편법이나 가치관 타협을 고뇌함</td>
+      <td>오직 하나님만 경배하라<br>(신 6:13)</td>
+      <td>과제 제출 및 시험 기간에도 주일 예배와 성경 공부 모임을 최우선으로 거룩히 구별하기</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECTION 8 -->
+<h1 class="section-heading">MODULE 8. 주간 SPACE QT 실천 챌린지 및 7일 워크북 (Weekly Tracker)</h1>
+
+<h2 class="sub-heading">8.1 7일간의 매일 SPACE QT 진행 요약표</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width:8%;">요일</th>
+      <th style="width:14%;">성경 본문</th>
+      <th style="width:25%;">SPACE 추출 분석</th>
+      <th style="width:43%;">오늘의 묵상 및 실천 적용 (3P)</th>
+      <th style="width:10%;">점검</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>월</b></td>
+      <td>마 4:1-4</td>
+      <td><b>P:</b> 말씀의 선포<br><b>C:</b> 말씀으로 살라</td>
+      <td>내 능력을 학점으로 증명하려 애쓰지 않고 자녀 됨을 기뻐하며 강의 참석하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>화</b></td>
+      <td>마 4:5-7</td>
+      <td><b>A:</b> 하나님 시험 금지<br><b>E:</b> 예수님의 겸손</td>
+      <td>남들에게 과시하려는 허영심을 버리고, 조용히 팀원의 어려움을 돕는 섬김 실천하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>수</b></td>
+      <td>마 4:8-11</td>
+      <td><b>S:</b> 세속 가치 타협<br><b>C:</b> 하나님만 경배</td>
+      <td>세상 성공보다 하나님과의 친밀함을 내 일상의 최고 가치로 재설정하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>목</b></td>
+      <td>신 8:1-6</td>
+      <td><b>P:</b> 만나의 공급<br><b>E:</b> 광야의 훈련</td>
+      <td>유학 생활의 경제적·언어적 결핍 앞에서 불평 대신 감사의 기도를 올리기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>금</b></td>
+      <td>신 8:7-10</td>
+      <td><b>P:</b> 아름다운 땅 인도<br><b>C:</b> 여호와를 찬송</td>
+      <td>고난 뒤에 반드시 찾아올 은혜의 계절을 기대하며 금주 리포트 성실히 마감하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>토</b></td>
+      <td>시 119:9-16</td>
+      <td><b>C:</b> 말씀을 마음에 둠<br><b>E:</b> 청년의 거룩</td>
+      <td>마음에 조급함이 불쑥 밀려올 때 3주차 핵심 요절을 입술로 3번 선포하기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+    <tr>
+      <td><b>일</b></td>
+      <td>롬 12:1-2</td>
+      <td><b>A:</b> 이 세대를 받지 말라<br><b>C:</b> 마음을 새롭게 함</td>
+      <td>캠퍼스의 세속적 세태에 물들지 않고 하나님이 기뻐하시는 온전한 예배자로 서기</td>
+      <td style="text-align:center;">[ &nbsp; ]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="sub-heading">8.2 매일 묵상 본문 전문 및 워크북 가이드 (Day 1 ~ Day 7)</h2>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 1] 월요일: 생존의 유혹을 넘어 말씀으로 서기 (마태복음 4:1-4)</h3>
+  <p><strong>[본문 요약]</strong> 예수님께서 40일을 금식하신 후 주리셨을 때, 시험하는 자가 나타나 돌들로 떡덩이가 되게 하라고 유혹합니다. 예수님은 사람이 떡으로만 살 것이 아니라 하나님의 입에서 나오는 말씀으로 산다고 선포하십니다.</p>
+  <p><strong>• S (고백할 죄):</strong> 당장의 불안감 때문에 하나님을 의지하기보다 세상적 계산을 먼저 했던 나의 모습</p>
+  <p><strong>• P (약속의 말씀):</strong> 나의 생명과 미래는 떡에 있는 것이 아니라 하나님의 입에서 나오는 말씀에 있다.</p>
+  <p><strong>• 3P 적용:</strong> 오늘 과제를 시작하기 전, 내 지혜를 의지하지 않고 말씀 한 구절을 읽고 묵상한 후 임하겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 2] 화요일: 영적 영웅주의와 인정 욕구 거절하기 (마태복음 4:5-7)</h3>
+  <p><strong>[본문 요약]</strong> 마귀가 예수님을 거룩한 성 꼭대기에 세우고 뛰어내리라 부추깁니다. 사자의 손이 너를 부딪히지 않게 하리라며 말씀을 왜곡합니다. 예수님은 주 너의 하나님을 시험하지 말라고 응수하십니다.</p>
+  <p><strong>• A (피할 행동):</strong> 사람들에게 인정받기 위해 나 자신을 포장하거나, 하나님을 테스트하려는 무모함</p>
+  <p><strong>• C (순종할 명령):</strong> 주 너의 하나님을 시험하지 말고 정직하고 겸손하게 삶의 자리를 지키라.</p>
+  <p><strong>• 3P 적용:</strong> 수업 시간 과시하고 싶은 마음을 가라앉히고, 교수님과 동기들의 발언을 경청하겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 3] 수요일: 세속적 타협을 물리치는 예배자의 유일성 (마태복음 4:8-11)</h3>
+  <p><strong>[본문 요약]</strong> 마귀가 지극히 높은 산으로 가 천하 만국과 그 영광을 보이며 절하면 이 모든 것을 주겠다고 합니다. 예수님은 사탄아 물러가라 선포하시며 오직 주 너의 하나님께 경배하고 그만 섬기라 하십니다.</p>
+  <p><strong>• C (순종할 명령):</strong> 사탄의 유혹에 타협하지 말고, 오직 하나님만 경배하고 그분만을 섬기라.</p>
+  <p><strong>• E (따를 본보기):</strong> 단호하게 "사탄아 물러가라"고 말씀의 권세로 선포하신 예수님의 용기</p>
+  <p><strong>• 3P 적용:</strong> 내 학업의 목적이 세속적 성공이나 권력이 아닌, 하나님을 경배하는 도구임을 다시 고백하겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 4] 목요일: 광야 훈련의 거룩한 목적 발견하기 (신명기 8:1-6)</h3>
+  <p><strong>[본문 요약]</strong> 하나님은 이스라엘을 40년 동안 광야에 두신 이유가 그들을 낮추시며 시험하사 마음이 어떠한지 지키는지 알아보기 위함이라고 하십니다. 만나를 먹이신 것은 사람이 말씀으로 사는 줄을 깨닫게 하심입니다.</p>
+  <p><strong>• P (약속의 말씀):</strong> 광야의 고난은 나를 무너뜨림이 아니라, 마침내 복을 주시려는 하나님의 낮추심이다.</p>
+  <p><strong>• 3P 적용:</strong> 유학 라이프에서 겪는 외로움과 부족함을 원망하지 않고, 내 내면을 정결케 하시는 은혜로 받아들이겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 5] 금요일: 옥토에 들어갈 때 경계해야 할 교만 (신명기 8:7-10)</h3>
+  <p><strong>[본문 요약]</strong> 하나님께서 너를 아름다운 땅에 이르게 하실 때, 네가 먹어서 배부르고 좋은 집을 짓고 소유가 풍부해질 때 마음에 교만하여 하나님을 잊어버릴까 염려하십니다. 네 능력으로 재물을 얻었다 말하지 말라 하십니다.</p>
+  <p><strong>• A (피할 행동):</strong> 학업적 성과나 성공이 찾아왔을 때 "내 능력과 힘으로 이루었다"고 착각하는 교만</p>
+  <p><strong>• 3P 적용:</strong> 좋은 점수를 받거나 칭찬을 들었을 때, 교만해지지 않고 즉시 마음속으로 하나님께 영광을 돌리겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 6] 토요일: 마음을 정결케 하는 말씀의 능력 (시편 119:9-16)</h3>
+  <p><strong>[본문 요약]</strong> 청년이 무엇으로 그의 행실을 깨끗하게 하리이까. 주의 말씀만 지킬 따름이니이다. 내가 주께 범죄하지 아니하려 하여 주의 말씀을 내 마음에 두었나이다.</p>
+  <p><strong>• C (순종할 명령):</strong> 주의 말씀을 마음에 품고, 입술로 즐거이 읊조리며 그 길을 주의하라.</p>
+  <p><strong>• 3P 적용:</strong> 이번 주 배운 3주차 요절을 암송하고, 핸드폰 배경화면에 적어두어 날마다 말씀의 기준을 확인하겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<div class="qt-daily-card">
+  <h3 style="margin-top:0; color:#2B6CB0;">[Day 7] 일요일: 시대를 거스르는 거룩한 예배자 (로마서 12:1-2)</h3>
+  <p><strong>[본문 요약]</strong> 너희 몸을 하나님이 기뻐하시는 거룩한 산 제물로 드리라. 너희는 이 세대를 본받지 말고 오직 마음을 새롭게 함으로 변화를 받아 하나님의 선하시고 기뻐하시고 온전하신 뜻이 무엇인지 분별하도록 하라.</p>
+  <p><strong>• A (피할 행동):</strong> 세상의 성과주의와 경쟁 문화의 흐름을 아무 생각 없이 따라가는 관성적 삶</p>
+  <p><strong>• 3P 적용:</strong> 주일 예배를 통해 내 삶의 엔진을 새로 고치고, 다음 한 주간의 전공 공부를 하나님께 드리는 산 제물로 삼겠다.</p>
+  <div class="writing-line"></div>
+</div>
+
+<!-- SECTION 9 -->
+<h1 class="section-heading">MODULE 9. 합심 기도문 및 성찰 에세이 가이드</h1>
+
+<h2 class="sub-heading">9.1 주간 공동체 합심 기도문</h2>
+<blockquote>
+  <p><em>"광야에서 승리하신 우리의 주 예수 그리스도여, 세속의 치열한 성과주의와 타인과의 소모적인 비교 속에서 날마다 마음을 졸이던 저희 유학생들의 연약함을 불쌍히 여겨 주소서. '네가 만일 하나님의 아들이어든 돌로 떡을 만들어 보라'며 능력을 증명하라고 압박하는 세상의 소리 앞에서, '사람이 떡으로만 살 것이 아니요 하나님의 입에서 나오는 모든 말씀으로 산다'고 선포하신 예수님의 승리를 저희의 승리로 삼게 하소서."</em></p>
+  <p><em>"하나님 아버지, 유학 라이프라는 이 광야의 계절이 저희에게 결핍과 고통의 자리가 아니라, 세상의 잡음을 끄고 하나님의 음성을 들으며 자녀로서의 정체성을 단단히 세우는 거룩한 용광로가 되게 하소서. 눈앞의 성적이나 스펙에 일희일비하지 않게 하시고, 나를 위해 목숨까지 내어주신 하나님의 사랑받는 자녀라는 영적 자존감을 가지고 당당하게 대학 생활에 임하게 하소서. 예수님의 귀하신 이름으로 기도합니다. 아멘."</em></p>
+</blockquote>
+
+<h2 class="sub-heading">9.2 주간 심층 성찰 에세이: "세상의 증명 요구와 나의 영적 정체성"</h2>
+<p style="font-size: 10pt; color: #4A5568;">
+<strong>[에세이 작성 가이드 및 세부 제출 양식]</strong><br>
+아래 3가지 질문을 바탕으로 자신의 생각과 영적 고백을 정리하여 A4 1~2장 분량으로 작성해 소그룹 리더에게 제출하세요.<br>
+1. <strong>현상 진단:</strong> 유학 생활 중 다른 유학생이나 한국인 동기들과 나를 비교하며 가장 조급해지거나 내 존재 가치를 의심했던 구체적 순간은 언제였습니까?<br>
+2. <strong>본문 재해석:</strong> 마태복음 4장의 예수님의 시험과 신명기 8장의 광야 훈련이 나에게 주는 영적 깨달음은 무엇이며, 사탄의 유혹에 맞서기 위해 내게 가장 필요한 말씀의 무기는 무엇입니까?<br>
+3. <strong>실천적 결단:</strong> 앞으로의 대학 라이프에서 세속적 성과주의에 매몰되지 않고, 하나님의 자녀라는 확신 속에서 학업에 몰입하기 위한 나만의 '광야 승리 수칙 3가지'를 작성하세요.
+</p>
+
+<!-- SECTION 10 -->
+<h1 class="section-heading">MODULE 10. 기독교 학문관과 전공 연결 (Faith & Learning Integration)</h1>
+
+<h2 class="sub-heading">10.1 광야의 정체성과 전공 학문의 연결 구조</h2>
+<p>유학생이 갖는 영적 정체성은 단순한 개인의 정서적 위로에 그치지 않습니다. 정체성이 바로 선 지성인은 자신이 공부하는 전공 학문(Specialized Discipline)을 바라보는 시각 자체가 변하게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:20%;">전공 계열</th>
+      <th style="width:35%;">성과주의적 세속적 관점 (떡의 관점)</th>
+      <th style="width:45%;">정체성이 회복된 기독교적 학문관 (말씀의 관점)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>경영 / 경제학</b></td>
+      <td>이윤 극대화와 개인의 부를 증명하는 도구로서의 학문</td>
+      <td>하나님의 지혜로 자원을 공정하게 배분하고 이웃을 섬기는 청지기적 학문</td>
+    </tr>
+    <tr>
+      <td><b>공학 / IT 기술</b></td>
+      <td>기술적 우위와 시장 점유율을 독점하기 위한 수단</td>
+      <td>소외된 이웃의 삶을 개선하고 창조 세계의 질서를 보존하는 기술 복지 학문</td>
+    </tr>
+    <tr>
+      <td><b>인문 / 사회과학</b></td>
+      <td>비판을 위한 비판, 대중의 인기를 얻기 위한 논리 구성</td>
+      <td>인간의 존엄성을 회복하고 사회의 깨어진 관계를 화해시키는 진리 탐구 학문</td>
+    </tr>
+    <tr>
+      <td><b>예술 / 디자인</b></td>
+      <td>자아 과시와 상업적 성공을 위한 심미적 도구</td>
+      <td>하나님의 아름다움을 세상에 투영하고 위로와 희망을 전하는 창조적 학문</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
