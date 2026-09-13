@@ -227,14 +227,22 @@
   <li><strong>학업에 임하는 자세 확립:</strong> 단순한 스펙 쌓기가 아닌, 하나님께서 나를 이 땅에 보낸 사명을 깨닫고 학업에 몰입할 동기를 부여합니다.</li>
 </ul>
 
+<h2 class="sub-heading">3.2 디지털 인터랙티브 스케치: 내가 직면한 '홍해'와 '열린 길' 그리기</h2>
 <div class="visual-guide">
-  <strong>🎨 [학생 워크북 스케치 01] 내가 직면한 '홍해'와 '열린 길' 그리기</strong>
-  <p>현재 내 삶과 학업에서 가장 막막하게 느껴지는 장애물(홍해)과, 하나님께서 열어주실 은혜의 길을 시각적으로 스케치해 보세요.</p>
-  <div class="sketch-area">
-    [ 🌊 장애물(홍해)과 하나님이 열어주실 신앙의 길을 자유롭게 그리세요 ]
+  <strong>🎨 [대면 참여자용 디지털 워킹 패드 가이드]</strong>
+  <p><strong>진행 방식:</strong> 아래 디지털 캔버스에 마우스나 터치패드로 <b>현재 내 삶과 학업에서 가장 막막하게 느껴지는 장애물(홍해)과, 하나님께서 열어주실 은혜의 길을 시각적으로 스케치해 보세요.</p>
+  
+  <div class="canvas-container">
+    <canvas id="victoryCanvas" width="650" height="240"></canvas>
+    <div class="canvas-tools">
+      <label><b>선 색상:</b> <input type="color" id="victoryPenColor" value="#2B6CB0"></label>
+      <label><b>굵기:</b> <input type="range" id="victoryPenWidth" min="1" max="12" value="3"></label>
+      <button type="button" class="btn-canvas btn-clear" onclick="clearVictoryCanvas()">전체 지우기</button>
+      <button type="button" class="btn-canvas" onclick="downloadVictoryCanvas()">그림 저장하기 (PNG)</button>
+    </div>
   </div>
 </div>
-
+  
 <h2 class="sub-heading">3.2 1주차 6단계 QT 실천 세부 프레임워크</h2>
 <ol>
   <li><strong>STEP 1: 준비와 기도 (Preparation)</strong> — "내 안의 조급함과 두려움을 비우고, 가만히 하나님을 바라보게 하소서."</li>
